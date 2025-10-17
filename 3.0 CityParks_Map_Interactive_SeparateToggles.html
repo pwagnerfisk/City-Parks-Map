@@ -1,0 +1,3001 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3ff55cb70eaf1fb56717fe44cbee3727 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="
+    position: fixed; 
+    bottom: 20px; left: 20px; 
+    background-color: white; border:1px solid #333; 
+    z-index:9999; font-size:13px;
+    padding: 8px 10px; border-radius:6px; line-height: 1.4;">
+<b>Legend</b><br>
+<span style="color:blue;">&#9679;</span> Northwest<br>
+<span style="color:green;">&#9679;</span> Northeast<br>
+<span style="color:orange;">&#9679;</span> Mesa Springs Greenway
+</div>
+    
+            <div class="folium-map" id="map_3ff55cb70eaf1fb56717fe44cbee3727" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3ff55cb70eaf1fb56717fe44cbee3727 = L.map(
+                "map_3ff55cb70eaf1fb56717fe44cbee3727",
+                {
+                    center: [38.916931543902436, -104.77370027073171],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_3ff55cb70eaf1fb56717fe44cbee3727);
+
+            
+
+        
+    
+            var tile_layer_f1351cc4657605846205bb8aa5c8159f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3ff55cb70eaf1fb56717fe44cbee3727);
+        
+    
+            var feature_group_3d74104d6d7f6397c1ddad6f584751fb = L.featureGroup(
+                {}
+            ).addTo(map_3ff55cb70eaf1fb56717fe44cbee3727);
+        
+    
+            var marker_ad23b5acb0bc05ffe3c176198da46791 = L.marker(
+                [38.9528777, -104.8810083],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_88218e4715be85f781a7f66956fdb0da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad23b5acb0bc05ffe3c176198da46791.setIcon(icon_88218e4715be85f781a7f66956fdb0da);
+        
+    
+        var popup_320ba9618365594525a97c69a403873d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ea4545fca29eb732d712f1410b9589d = $(`<div id="html_8ea4545fca29eb732d712f1410b9589d" style="width: 100.0%; height: 100.0%;">Marshall Sprague<br>3492 W. Woodmen Rd.<br><b>Northwest</b></div>`)[0];
+            popup_320ba9618365594525a97c69a403873d.setContent(html_8ea4545fca29eb732d712f1410b9589d);
+        
+
+        marker_ad23b5acb0bc05ffe3c176198da46791.bindPopup(popup_320ba9618365594525a97c69a403873d)
+        ;
+
+        
+    
+    
+            var marker_bc2dcf1053b1456460b0b0f78d02b31b = L.marker(
+                [38.9079504, -104.8722448],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_796a538a2f4488878428c3e40889d959 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc2dcf1053b1456460b0b0f78d02b31b.setIcon(icon_796a538a2f4488878428c3e40889d959);
+        
+    
+        var popup_81e1576213c4f27ee2f0ea1b7c2d9ab3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_651ce0e71753d524dbab0b05ffd73384 = $(`<div id="html_651ce0e71753d524dbab0b05ffd73384" style="width: 100.0%; height: 100.0%;">Mountain Shadows<br>5151 Flying W Ranch Rd.<br><b>Northwest</b></div>`)[0];
+            popup_81e1576213c4f27ee2f0ea1b7c2d9ab3.setContent(html_651ce0e71753d524dbab0b05ffd73384);
+        
+
+        marker_bc2dcf1053b1456460b0b0f78d02b31b.bindPopup(popup_81e1576213c4f27ee2f0ea1b7c2d9ab3)
+        ;
+
+        
+    
+    
+            var marker_04cb3fb41dfff13a4c089e0c825ca58d = L.marker(
+                [38.8646279, -104.8718799],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_dbce30b57dd686136962a0d120842b1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_04cb3fb41dfff13a4c089e0c825ca58d.setIcon(icon_dbce30b57dd686136962a0d120842b1a);
+        
+    
+        var popup_9da25d32f1057926bbd4d048384f94b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_168e48d1cc2cf0f074f2c7741e28ae3c = $(`<div id="html_168e48d1cc2cf0f074f2c7741e28ae3c" style="width: 100.0%; height: 100.0%;">Westmoor<br>3315 Water St.<br><b>Northwest</b></div>`)[0];
+            popup_9da25d32f1057926bbd4d048384f94b4.setContent(html_168e48d1cc2cf0f074f2c7741e28ae3c);
+        
+
+        marker_04cb3fb41dfff13a4c089e0c825ca58d.bindPopup(popup_9da25d32f1057926bbd4d048384f94b4)
+        ;
+
+        
+    
+    
+            var marker_5839e9f56929ac83e75c14d50f211f6b = L.marker(
+                [38.9303627, -104.8713668],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_1fc46e78c324d30f47314b13be685252 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5839e9f56929ac83e75c14d50f211f6b.setIcon(icon_1fc46e78c324d30f47314b13be685252);
+        
+    
+        var popup_2f4914005ac879c3cf19b5abffd0a38a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b922d585596eb3e7854fb6b537ccf2b = $(`<div id="html_4b922d585596eb3e7854fb6b537ccf2b" style="width: 100.0%; height: 100.0%;">Wilson Ranch<br>2335 Allegheny Dr.<br><b>Northwest</b></div>`)[0];
+            popup_2f4914005ac879c3cf19b5abffd0a38a.setContent(html_4b922d585596eb3e7854fb6b537ccf2b);
+        
+
+        marker_5839e9f56929ac83e75c14d50f211f6b.bindPopup(popup_2f4914005ac879c3cf19b5abffd0a38a)
+        ;
+
+        
+    
+    
+            var marker_c8408c6fa2bf6a59e6afbf24c1952725 = L.marker(
+                [38.9350622, -104.8705055],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_18907f24db60468e658eb722924ab7b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8408c6fa2bf6a59e6afbf24c1952725.setIcon(icon_18907f24db60468e658eb722924ab7b5);
+        
+    
+        var popup_edbfc3061a183efde7b56c3ef90586b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14f9dfc5bb7ce814ada7af492f56a9e5 = $(`<div id="html_14f9dfc5bb7ce814ada7af492f56a9e5" style="width: 100.0%; height: 100.0%;">Oak Valley<br>2325 Silent Rain Dr.<br><b>Northwest</b></div>`)[0];
+            popup_edbfc3061a183efde7b56c3ef90586b1.setContent(html_14f9dfc5bb7ce814ada7af492f56a9e5);
+        
+
+        marker_c8408c6fa2bf6a59e6afbf24c1952725.bindPopup(popup_edbfc3061a183efde7b56c3ef90586b1)
+        ;
+
+        
+    
+    
+            var marker_84d75252032a3b54e7e5e1df956bfc60 = L.marker(
+                [38.9474384, -104.8685322],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_f4f6874a7281005034520d9f71fdfa91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84d75252032a3b54e7e5e1df956bfc60.setIcon(icon_f4f6874a7281005034520d9f71fdfa91);
+        
+    
+        var popup_0c0923848bdf492bff9b45c28362896a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_776783ebfa6c5834a9b33d375b5e136a = $(`<div id="html_776783ebfa6c5834a9b33d375b5e136a" style="width: 100.0%; height: 100.0%;">Woodmen Valley<br>2525 W. Woodmen Rd.<br><b>Northwest</b></div>`)[0];
+            popup_0c0923848bdf492bff9b45c28362896a.setContent(html_776783ebfa6c5834a9b33d375b5e136a);
+        
+
+        marker_84d75252032a3b54e7e5e1df956bfc60.bindPopup(popup_0c0923848bdf492bff9b45c28362896a)
+        ;
+
+        
+    
+    
+            var marker_5725c0f657492951444dc8a7f992f1c8 = L.marker(
+                [38.8664011, -104.8605996],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_c506701278a277d84f66ba115689229d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5725c0f657492951444dc8a7f992f1c8.setIcon(icon_c506701278a277d84f66ba115689229d);
+        
+    
+        var popup_48ef33f93fb17634884563dd947adf55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee1f51ac350b85f14e89beb7b397ee8f = $(`<div id="html_ee1f51ac350b85f14e89beb7b397ee8f" style="width: 100.0%; height: 100.0%;">Pioneer<br>1101 Cenotaph Cir.<br><b>Northwest</b></div>`)[0];
+            popup_48ef33f93fb17634884563dd947adf55.setContent(html_ee1f51ac350b85f14e89beb7b397ee8f);
+        
+
+        marker_5725c0f657492951444dc8a7f992f1c8.bindPopup(popup_48ef33f93fb17634884563dd947adf55)
+        ;
+
+        
+    
+    
+            var marker_e3e4de7ae4819651bfa7e7c48db3078e = L.marker(
+                [38.9119003, -104.8598733],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_eade80e17e110eeb96571f22877217e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e3e4de7ae4819651bfa7e7c48db3078e.setIcon(icon_eade80e17e110eeb96571f22877217e1);
+        
+    
+        var popup_e470c399c1d2f42d97b091d3349b4135 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d2ee3f4200901b239af7752204ea04a = $(`<div id="html_5d2ee3f4200901b239af7752204ea04a" style="width: 100.0%; height: 100.0%;">Pinon Valley<br>5585 Mule Deer Dr.<br><b>Northwest</b></div>`)[0];
+            popup_e470c399c1d2f42d97b091d3349b4135.setContent(html_5d2ee3f4200901b239af7752204ea04a);
+        
+
+        marker_e3e4de7ae4819651bfa7e7c48db3078e.bindPopup(popup_e470c399c1d2f42d97b091d3349b4135)
+        ;
+
+        
+    
+    
+            var marker_aec69604f7f6b4a1f1c7ec5adcdd5ba4 = L.marker(
+                [38.9417671, -104.8511169],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_1b2e9ca854822159de947fd4fb203d09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aec69604f7f6b4a1f1c7ec5adcdd5ba4.setIcon(icon_1b2e9ca854822159de947fd4fb203d09);
+        
+    
+        var popup_48abb05698395322ceda9ffafed1f439 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c69399ebcd88cd6bf488baff4389387e = $(`<div id="html_c69399ebcd88cd6bf488baff4389387e" style="width: 100.0%; height: 100.0%;">Woodstone<br>1315 Carlson Dr.<br><b>Northwest</b></div>`)[0];
+            popup_48abb05698395322ceda9ffafed1f439.setContent(html_c69399ebcd88cd6bf488baff4389387e);
+        
+
+        marker_aec69604f7f6b4a1f1c7ec5adcdd5ba4.bindPopup(popup_48abb05698395322ceda9ffafed1f439)
+        ;
+
+        
+    
+    
+            var marker_7101f53e1af484211d0cf5baae18ecc1 = L.marker(
+                [38.9087287, -104.8439842],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_ea0dae64bde779c8d0e5890127cfb227 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7101f53e1af484211d0cf5baae18ecc1.setIcon(icon_ea0dae64bde779c8d0e5890127cfb227);
+        
+    
+        var popup_364d565401946efbefa85e2aa144ee9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86b2adc85a04697f8478be5e53d91217 = $(`<div id="html_86b2adc85a04697f8478be5e53d91217" style="width: 100.0%; height: 100.0%;">Pine Cliff<br>855 Popes Valley Dr.<br><b>Northwest</b></div>`)[0];
+            popup_364d565401946efbefa85e2aa144ee9f.setContent(html_86b2adc85a04697f8478be5e53d91217);
+        
+
+        marker_7101f53e1af484211d0cf5baae18ecc1.bindPopup(popup_364d565401946efbefa85e2aa144ee9f)
+        ;
+
+        
+    
+    
+            var marker_ef65075cb6554810ba88a10d823932ed = L.marker(
+                [38.9316252, -104.8436481],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_9309377155308e021e5ec842b83ae5cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef65075cb6554810ba88a10d823932ed.setIcon(icon_9309377155308e021e5ec842b83ae5cb);
+        
+    
+        var popup_3cfcb38aca7e9bd9f2acc405aff7e8f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9f2e05c07c016ad12c1aef3088557ce = $(`<div id="html_d9f2e05c07c016ad12c1aef3088557ce" style="width: 100.0%; height: 100.0%;">Foothills<br>853 Allegheny Dr.<br><b>Northwest</b></div>`)[0];
+            popup_3cfcb38aca7e9bd9f2acc405aff7e8f9.setContent(html_d9f2e05c07c016ad12c1aef3088557ce);
+        
+
+        marker_ef65075cb6554810ba88a10d823932ed.bindPopup(popup_3cfcb38aca7e9bd9f2acc405aff7e8f9)
+        ;
+
+        
+    
+    
+            var marker_4d37f3da0bbcf2414672802bca744f4b = L.marker(
+                [38.8763402, -104.8413853],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_d807a511bf2ba5318804023577f17265 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d37f3da0bbcf2414672802bca744f4b.setIcon(icon_d807a511bf2ba5318804023577f17265);
+        
+    
+        var popup_06a419d75df0692e756e0e86a75b5743 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce43ee6c5aa68ae1446f8d279c602547 = $(`<div id="html_ce43ee6c5aa68ae1446f8d279c602547" style="width: 100.0%; height: 100.0%;">Centennnial Medians<br>Mule Deer to GoG to Fillmore<br><b>Northwest</b></div>`)[0];
+            popup_06a419d75df0692e756e0e86a75b5743.setContent(html_ce43ee6c5aa68ae1446f8d279c602547);
+        
+
+        marker_4d37f3da0bbcf2414672802bca744f4b.bindPopup(popup_06a419d75df0692e756e0e86a75b5743)
+        ;
+
+        
+    
+    
+            var marker_70853520e487194e7661773bad4e10a9 = L.marker(
+                [38.8933405, -104.8409344],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_1166f5ffd8023266b912123fbb5a061a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70853520e487194e7661773bad4e10a9.setIcon(icon_1166f5ffd8023266b912123fbb5a061a);
+        
+    
+        var popup_a62de638279f5b56cf5752c41fe9a289 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdf87498e5464e32048aa8efe6271806 = $(`<div id="html_fdf87498e5464e32048aa8efe6271806" style="width: 100.0%; height: 100.0%;">Jackson<br>1111 Holland Park Blvd.<br><b>Northwest</b></div>`)[0];
+            popup_a62de638279f5b56cf5752c41fe9a289.setContent(html_fdf87498e5464e32048aa8efe6271806);
+        
+
+        marker_70853520e487194e7661773bad4e10a9.bindPopup(popup_a62de638279f5b56cf5752c41fe9a289)
+        ;
+
+        
+    
+    
+            var marker_08f2d5c6e79a2cc8f979379408fe3dae = L.marker(
+                [38.869144, -104.8371246],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_db7ed250b75484a2d03e198df46a129d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08f2d5c6e79a2cc8f979379408fe3dae.setIcon(icon_db7ed250b75484a2d03e198df46a129d);
+        
+    
+        var popup_4f1fa7a117d8b791064458283c073804 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0fd1c6b650fc6b034d5d0d8736a7398 = $(`<div id="html_d0fd1c6b650fc6b034d5d0d8736a7398" style="width: 100.0%; height: 100.0%;">Pike<br>2610 N. Chestnut St.<br><b>Northwest</b></div>`)[0];
+            popup_4f1fa7a117d8b791064458283c073804.setContent(html_d0fd1c6b650fc6b034d5d0d8736a7398);
+        
+
+        marker_08f2d5c6e79a2cc8f979379408fe3dae.bindPopup(popup_4f1fa7a117d8b791064458283c073804)
+        ;
+
+        
+    
+    
+            var marker_41d3e64ff246f88230279fcb29a7a3fc = L.marker(
+                [38.9336495, -104.8312343],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_e86b9812e7d4d856e3f07115821101b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_41d3e64ff246f88230279fcb29a7a3fc.setIcon(icon_e86b9812e7d4d856e3f07115821101b9);
+        
+    
+        var popup_bb52acf48bfe41e6ccb90201c1f41ef0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fc04562281302396835e69027455248 = $(`<div id="html_1fc04562281302396835e69027455248" style="width: 100.0%; height: 100.0%;">Discovery<br>155 Buckeye Dr.<br><b>Northwest</b></div>`)[0];
+            popup_bb52acf48bfe41e6ccb90201c1f41ef0.setContent(html_1fc04562281302396835e69027455248);
+        
+
+        marker_41d3e64ff246f88230279fcb29a7a3fc.bindPopup(popup_bb52acf48bfe41e6ccb90201c1f41ef0)
+        ;
+
+        
+    
+    
+            var marker_6a6f64d9f64747d510ac1d84ceaacb4c = L.marker(
+                [38.9284802, -104.8307222],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_8a2f5e4bdb3964cf3c846606639af6ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a6f64d9f64747d510ac1d84ceaacb4c.setIcon(icon_8a2f5e4bdb3964cf3c846606639af6ae);
+        
+    
+        var popup_34d96733bf3d0c4f86957fa82d9f2749 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee6ca8df100f3beb4026b3b23ad9b866 = $(`<div id="html_ee6ca8df100f3beb4026b3b23ad9b866" style="width: 100.0%; height: 100.0%;">Rockrimmon Medians<br>Woodmen to Delmonico<br><b>Northwest</b></div>`)[0];
+            popup_34d96733bf3d0c4f86957fa82d9f2749.setContent(html_ee6ca8df100f3beb4026b3b23ad9b866);
+        
+
+        marker_6a6f64d9f64747d510ac1d84ceaacb4c.bindPopup(popup_34d96733bf3d0c4f86957fa82d9f2749)
+        ;
+
+        
+    
+    
+            var marker_caaa1a405c86b64b0417bece52759452 = L.marker(
+                [38.871784, -104.8305047],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_78f179da0fe7405cadf20d54c3f376f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_caaa1a405c86b64b0417bece52759452.setIcon(icon_78f179da0fe7405cadf20d54c3f376f7);
+        
+    
+        var popup_4b8e3b50adc9b89f1a5d2fd380981520 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c25e461b8c83cf71d286848d07f1d43 = $(`<div id="html_3c25e461b8c83cf71d286848d07f1d43" style="width: 100.0%; height: 100.0%;">Roswell<br>515 Polk St.<br><b>Northwest</b></div>`)[0];
+            popup_4b8e3b50adc9b89f1a5d2fd380981520.setContent(html_3c25e461b8c83cf71d286848d07f1d43);
+        
+
+        marker_caaa1a405c86b64b0417bece52759452.bindPopup(popup_4b8e3b50adc9b89f1a5d2fd380981520)
+        ;
+
+        
+    
+    
+            var marker_34c84b958b6fb0a5032b29bebbd89b1b = L.marker(
+                [38.8898416, -104.8272161],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_6b714d85afbbca63d7f15405192b4114 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34c84b958b6fb0a5032b29bebbd89b1b.setIcon(icon_6b714d85afbbca63d7f15405192b4114);
+        
+    
+        var popup_122ce5c500d843276b698812de0de717 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83d2386bd675b7dc21b16d95ccfa5734 = $(`<div id="html_83d2386bd675b7dc21b16d95ccfa5734" style="width: 100.0%; height: 100.0%;">Goose Complex<br>3950 Mark Dabling Blvd.<br><b>Northwest</b></div>`)[0];
+            popup_122ce5c500d843276b698812de0de717.setContent(html_83d2386bd675b7dc21b16d95ccfa5734);
+        
+
+        marker_34c84b958b6fb0a5032b29bebbd89b1b.bindPopup(popup_122ce5c500d843276b698812de0de717)
+        ;
+
+        
+    
+    
+            var marker_9bbeaf73274ea4919e5cca5b193ab11b = L.marker(
+                [38.9206414, -104.8268842],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_ea880f072ee8021b9fe238ca290e44db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9bbeaf73274ea4919e5cca5b193ab11b.setIcon(icon_ea880f072ee8021b9fe238ca290e44db);
+        
+    
+        var popup_d819a4910f2e9099ac82bbd1dcff06c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1546521cef814acde21f9cc5b39088bf = $(`<div id="html_1546521cef814acde21f9cc5b39088bf" style="width: 100.0%; height: 100.0%;">Golden Hills<br>6155 Delmonico Dr.<br><b>Northwest</b></div>`)[0];
+            popup_d819a4910f2e9099ac82bbd1dcff06c2.setContent(html_1546521cef814acde21f9cc5b39088bf);
+        
+
+        marker_9bbeaf73274ea4919e5cca5b193ab11b.bindPopup(popup_d819a4910f2e9099ac82bbd1dcff06c2)
+        ;
+
+        
+    
+    
+            var marker_e7cedb2d5ab20a984e2372c86a9be5b3 = L.marker(
+                [38.9330043, -104.8151614],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_bbebf612981863bca3fb4c0b0c2c96a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e7cedb2d5ab20a984e2372c86a9be5b3.setIcon(icon_bbebf612981863bca3fb4c0b0c2c96a2);
+        
+    
+        var popup_539271e525c3fbdcc9cb2cc694d350d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebc73d90ea5da00f2c13059513b9035e = $(`<div id="html_ebc73d90ea5da00f2c13059513b9035e" style="width: 100.0%; height: 100.0%;">Woodmen West Medians<br>Between Commerce Center Dr & E Woodmen Rd.<br><b>Northwest</b></div>`)[0];
+            popup_539271e525c3fbdcc9cb2cc694d350d6.setContent(html_ebc73d90ea5da00f2c13059513b9035e);
+        
+
+        marker_e7cedb2d5ab20a984e2372c86a9be5b3.bindPopup(popup_539271e525c3fbdcc9cb2cc694d350d6)
+        ;
+
+        
+    
+    
+            var marker_1bb7f91719e17024d801fee309bc0905 = L.marker(
+                [38.8782796, -104.8113885],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_733f7b302d5bb0a4526ad1d299ff3e55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1bb7f91719e17024d801fee309bc0905.setIcon(icon_733f7b302d5bb0a4526ad1d299ff3e55);
+        
+    
+        var popup_77a4fde16ada89c804e85c05c77e099f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ac453df143ff01c5be39fdab7929be8 = $(`<div id="html_3ac453df143ff01c5be39fdab7929be8" style="width: 100.0%; height: 100.0%;">Flanagan<br>3132 N. Prospect St.<br><b>Northwest</b></div>`)[0];
+            popup_77a4fde16ada89c804e85c05c77e099f.setContent(html_3ac453df143ff01c5be39fdab7929be8);
+        
+
+        marker_1bb7f91719e17024d801fee309bc0905.bindPopup(popup_77a4fde16ada89c804e85c05c77e099f)
+        ;
+
+        
+    
+    
+            var marker_605c4db908ce5edf460444d995f45b05 = L.marker(
+                [39.025399, -104.8084482],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_2bc4c55248b977af12466b7a3f0070e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_605c4db908ce5edf460444d995f45b05.setIcon(icon_2bc4c55248b977af12466b7a3f0070e1);
+        
+    
+        var popup_a6b430d361d97a54c0b34d1e21e9734c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc845c4c90228cba2a80a2620e79dde4 = $(`<div id="html_cc845c4c90228cba2a80a2620e79dde4" style="width: 100.0%; height: 100.0%;">Grey Hawk<br>968 Spectrum Loop<br><b>Northwest</b></div>`)[0];
+            popup_a6b430d361d97a54c0b34d1e21e9734c.setContent(html_cc845c4c90228cba2a80a2620e79dde4);
+        
+
+        marker_605c4db908ce5edf460444d995f45b05.bindPopup(popup_a6b430d361d97a54c0b34d1e21e9734c)
+        ;
+
+        
+    
+    
+            var marker_9aa77947ed2867be87345bbe7bfb65ec = L.marker(
+                [38.8892752, -104.8057953],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_0b010cf7d83a8b308831cef7040c5042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9aa77947ed2867be87345bbe7bfb65ec.setIcon(icon_0b010cf7d83a8b308831cef7040c5042);
+        
+    
+        var popup_de296090ca46217136379b902eb99743 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_299cb748a6a087b1e1031dc3e2952ca6 = $(`<div id="html_299cb748a6a087b1e1031dc3e2952ca6" style="width: 100.0%; height: 100.0%;">Danville<br>1147 Mountview Ln.<br><b>Northwest</b></div>`)[0];
+            popup_de296090ca46217136379b902eb99743.setContent(html_299cb748a6a087b1e1031dc3e2952ca6);
+        
+
+        marker_9aa77947ed2867be87345bbe7bfb65ec.bindPopup(popup_de296090ca46217136379b902eb99743)
+        ;
+
+        
+    
+    
+            var marker_35c5b5d8c30f82d5851637233417be15 = L.marker(
+                [39.0114057, -104.8053103],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_02342990c26103eb257853d95985ab17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_35c5b5d8c30f82d5851637233417be15.setIcon(icon_02342990c26103eb257853d95985ab17);
+        
+    
+        var popup_80bc3e6af6a77984f6465223b620a999 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8174c23e629dceb23add75322f3fbf4a = $(`<div id="html_8174c23e629dceb23add75322f3fbf4a" style="width: 100.0%; height: 100.0%;">Mary Kyer<br>1101 Middle Creek Pkwy.<br><b>Northwest</b></div>`)[0];
+            popup_80bc3e6af6a77984f6465223b620a999.setContent(html_8174c23e629dceb23add75322f3fbf4a);
+        
+
+        marker_35c5b5d8c30f82d5851637233417be15.bindPopup(popup_80bc3e6af6a77984f6465223b620a999)
+        ;
+
+        
+    
+    
+            var marker_ed27f033835be96b02df4a1e16439af1 = L.marker(
+                [38.8825543, -104.8017339],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_bfb58f41f1da8b00a5a10e7a45ca415a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed27f033835be96b02df4a1e16439af1.setIcon(icon_bfb58f41f1da8b00a5a10e7a45ca415a);
+        
+    
+        var popup_08bb9edacacf1ead20d475e6a839533c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3944ef9879396d797c01d24933f7807d = $(`<div id="html_3944ef9879396d797c01d24933f7807d" style="width: 100.0%; height: 100.0%;">Portal Park<br>3536 N. Hancock Ave.<br><b>Northwest</b></div>`)[0];
+            popup_08bb9edacacf1ead20d475e6a839533c.setContent(html_3944ef9879396d797c01d24933f7807d);
+        
+
+        marker_ed27f033835be96b02df4a1e16439af1.bindPopup(popup_08bb9edacacf1ead20d475e6a839533c)
+        ;
+
+        
+    
+    
+            var marker_971f6cbfbcf74902cb57179a8ab91fe5 = L.marker(
+                [38.9235514, -104.7964356],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_af662e1b8071e936bac3b3c766bdd76e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_971f6cbfbcf74902cb57179a8ab91fe5.setIcon(icon_af662e1b8071e936bac3b3c766bdd76e);
+        
+    
+        var popup_fb8c5a15b4f8404b1919ed489a4d273b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17b9ed18c67ea8b0ade7cb1b073f6598 = $(`<div id="html_17b9ed18c67ea8b0ade7cb1b073f6598" style="width: 100.0%; height: 100.0%;">Erindale<br>1705 Twin Oaks Dr.<br><b>Northwest</b></div>`)[0];
+            popup_fb8c5a15b4f8404b1919ed489a4d273b.setContent(html_17b9ed18c67ea8b0ade7cb1b073f6598);
+        
+
+        marker_971f6cbfbcf74902cb57179a8ab91fe5.bindPopup(popup_fb8c5a15b4f8404b1919ed489a4d273b)
+        ;
+
+        
+    
+    
+            var marker_a815d599e29dace0777f82dbf7caee04 = L.marker(
+                [38.9028633, -104.7899228],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_5dfd9fb016ac8c8e642432fad6ec9abd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a815d599e29dace0777f82dbf7caee04.setIcon(icon_5dfd9fb016ac8c8e642432fad6ec9abd);
+        
+    
+        var popup_f2112ba4f165bd5bfc34ed13e500825f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa3c563d01eef50aea4dde8088d847f3 = $(`<div id="html_aa3c563d01eef50aea4dde8088d847f3" style="width: 100.0%; height: 100.0%;">Frank Houck<br>2002 Collegiate Dr.<br><b>Northwest</b></div>`)[0];
+            popup_f2112ba4f165bd5bfc34ed13e500825f.setContent(html_aa3c563d01eef50aea4dde8088d847f3);
+        
+
+        marker_a815d599e29dace0777f82dbf7caee04.bindPopup(popup_f2112ba4f165bd5bfc34ed13e500825f)
+        ;
+
+        
+    
+    
+            var marker_1d596dbc4e97a2162f4ec5547f520cd0 = L.marker(
+                [38.910328, -104.7885871],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_75f79c414339bcd0e61ee3537f72fd56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d596dbc4e97a2162f4ec5547f520cd0.setIcon(icon_75f79c414339bcd0e61ee3537f72fd56);
+        
+    
+        var popup_7035801db561dcf01300472e7d07a1b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73c3acc5d98002cf0872f7f2127b8720 = $(`<div id="html_73c3acc5d98002cf0872f7f2127b8720" style="width: 100.0%; height: 100.0%;">University Park Trail<br>Rockhurst: Montebello to University Park Blvd.<br><b>Northwest</b></div>`)[0];
+            popup_7035801db561dcf01300472e7d07a1b4.setContent(html_73c3acc5d98002cf0872f7f2127b8720);
+        
+
+        marker_1d596dbc4e97a2162f4ec5547f520cd0.bindPopup(popup_7035801db561dcf01300472e7d07a1b4)
+        ;
+
+        
+    
+    
+            var marker_f7dc84052e60245d380c6a052a70f504 = L.marker(
+                [38.9049972, -104.7864941],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_76ac1e15ccdd127a111f2b59cd1950d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f7dc84052e60245d380c6a052a70f504.setIcon(icon_76ac1e15ccdd127a111f2b59cd1950d7);
+        
+    
+        var popup_ca5b926afcb22ec7413d855366e78a70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19ad22addd47b84573fd7331722df9de = $(`<div id="html_19ad22addd47b84573fd7331722df9de" style="width: 100.0%; height: 100.0%;">Garden Ranch<br>2220 Montebello Dr. W.<br><b>Northwest</b></div>`)[0];
+            popup_ca5b926afcb22ec7413d855366e78a70.setContent(html_19ad22addd47b84573fd7331722df9de);
+        
+
+        marker_f7dc84052e60245d380c6a052a70f504.bindPopup(popup_ca5b926afcb22ec7413d855366e78a70)
+        ;
+
+        
+    
+    
+            var marker_8cba9bc47c03dae035e36a54c1c6df0a = L.marker(
+                [38.9776196, -104.7836359],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_58491dd4fa22a37e0655b454c751c37f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8cba9bc47c03dae035e36a54c1c6df0a.setIcon(icon_58491dd4fa22a37e0655b454c751c37f);
+        
+    
+        var popup_a3966fbefe072b56d6492bcdb8e0ba14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d2189d7570ca4da5bdaa9ca3bc4dc77 = $(`<div id="html_3d2189d7570ca4da5bdaa9ca3bc4dc77" style="width: 100.0%; height: 100.0%;">Kathleen Marriage<br>2320 Amberwood Ln.<br><b>Northwest</b></div>`)[0];
+            popup_a3966fbefe072b56d6492bcdb8e0ba14.setContent(html_3d2189d7570ca4da5bdaa9ca3bc4dc77);
+        
+
+        marker_8cba9bc47c03dae035e36a54c1c6df0a.bindPopup(popup_a3966fbefe072b56d6492bcdb8e0ba14)
+        ;
+
+        
+    
+    
+            var marker_9153e0c440149f4d630efe2e271a43ac = L.marker(
+                [38.9240073, -104.7834563],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_7e703c0e381514201db00efa8afc34fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9153e0c440149f4d630efe2e271a43ac.setIcon(icon_7e703c0e381514201db00efa8afc34fc);
+        
+    
+        var popup_0fab2a5f9eaeab796ae7f66c32d31e15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b317352089f4264f00fec2e6b102b93 = $(`<div id="html_1b317352089f4264f00fec2e6b102b93" style="width: 100.0%; height: 100.0%;">Dublin<br>2450 Roundtop Dr.<br><b>Northwest</b></div>`)[0];
+            popup_0fab2a5f9eaeab796ae7f66c32d31e15.setContent(html_1b317352089f4264f00fec2e6b102b93);
+        
+
+        marker_9153e0c440149f4d630efe2e271a43ac.bindPopup(popup_0fab2a5f9eaeab796ae7f66c32d31e15)
+        ;
+
+        
+    
+    
+            var marker_f5a85b212ac3d3f3782eabad0a0c107c = L.marker(
+                [38.9128806, -104.7794421],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_6472abe14b6320f9d7b5624af8d2cea7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5a85b212ac3d3f3782eabad0a0c107c.setIcon(icon_6472abe14b6320f9d7b5624af8d2cea7);
+        
+    
+        var popup_83ca06e2fc4193ae85d199d5f5124985 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00c728e057895d9377b3ef3d02111e97 = $(`<div id="html_00c728e057895d9377b3ef3d02111e97" style="width: 100.0%; height: 100.0%;">George Fellows<br>5711 Tuckerman Dr.<br><b>Northwest</b></div>`)[0];
+            popup_83ca06e2fc4193ae85d199d5f5124985.setContent(html_00c728e057895d9377b3ef3d02111e97);
+        
+
+        marker_f5a85b212ac3d3f3782eabad0a0c107c.bindPopup(popup_83ca06e2fc4193ae85d199d5f5124985)
+        ;
+
+        
+    
+    
+            var marker_02088eddd96480841d8dfabb00bfecbb = L.marker(
+                [38.9641493, -104.7779834],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_19eb69e10e0c6edd212fde2d47774021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_02088eddd96480841d8dfabb00bfecbb.setIcon(icon_19eb69e10e0c6edd212fde2d47774021);
+        
+    
+        var popup_7c36300cff07e1e2839fa8572ba73918 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6db2b6e3eb992d3c82f061e5d7521a31 = $(`<div id="html_6db2b6e3eb992d3c82f061e5d7521a31" style="width: 100.0%; height: 100.0%;">Lulu Pollard<br>2550 Dynamic Dr.<br><b>Northwest</b></div>`)[0];
+            popup_7c36300cff07e1e2839fa8572ba73918.setContent(html_6db2b6e3eb992d3c82f061e5d7521a31);
+        
+
+        marker_02088eddd96480841d8dfabb00bfecbb.bindPopup(popup_7c36300cff07e1e2839fa8572ba73918)
+        ;
+
+        
+    
+    
+            var marker_225cf0abd61394ef11ea3ebffc4a3f60 = L.marker(
+                [38.9063325, -104.7756582],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_2d39115e2fa3919085dba4542a77e733 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_225cf0abd61394ef11ea3ebffc4a3f60.setIcon(icon_2d39115e2fa3919085dba4542a77e733);
+        
+    
+        var popup_56f1afe64105dcb457b95f15726ebcf0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fadb45b25ccb2df70c8551527525aa16 = $(`<div id="html_fadb45b25ccb2df70c8551527525aa16" style="width: 100.0%; height: 100.0%;">Tomah<br>5285 Tomah Dr.<br><b>Northwest</b></div>`)[0];
+            popup_56f1afe64105dcb457b95f15726ebcf0.setContent(html_fadb45b25ccb2df70c8551527525aa16);
+        
+
+        marker_225cf0abd61394ef11ea3ebffc4a3f60.bindPopup(popup_56f1afe64105dcb457b95f15726ebcf0)
+        ;
+
+        
+    
+    
+            var marker_d572553d629d3241087e95a3c2213cbf = L.marker(
+                [38.9550472, -104.7723083],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_12714877e6ce55aeeddc9d3d05efadf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d572553d629d3241087e95a3c2213cbf.setIcon(icon_12714877e6ce55aeeddc9d3d05efadf4);
+        
+    
+        var popup_32757be562480c2dd2a41553efe5fc50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c69085dbd4341aeff2c57f8b3aa46ad = $(`<div id="html_5c69085dbd4341aeff2c57f8b3aa46ad" style="width: 100.0%; height: 100.0%;">Wedgewood<br>2830 Parliament Dr.<br><b>Northwest</b></div>`)[0];
+            popup_32757be562480c2dd2a41553efe5fc50.setContent(html_5c69085dbd4341aeff2c57f8b3aa46ad);
+        
+
+        marker_d572553d629d3241087e95a3c2213cbf.bindPopup(popup_32757be562480c2dd2a41553efe5fc50)
+        ;
+
+        
+    
+    
+            var marker_3f052f4f8b6ecb6ae8f7140d0ce22e4b = L.marker(
+                [38.9658246, -104.7579476],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_c9ef4519b53ff757ecfe51532f23588d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3f052f4f8b6ecb6ae8f7140d0ce22e4b.setIcon(icon_c9ef4519b53ff757ecfe51532f23588d);
+        
+    
+        var popup_71ccfd694a0ad9e7fa0b4d4855c06a40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fe2ba3c5aef621b037cb7c2149113f4 = $(`<div id="html_6fe2ba3c5aef621b037cb7c2149113f4" style="width: 100.0%; height: 100.0%;">John Venezia Park<br>3685 Briargate Pkwy<br><b>Northwest</b></div>`)[0];
+            popup_71ccfd694a0ad9e7fa0b4d4855c06a40.setContent(html_6fe2ba3c5aef621b037cb7c2149113f4);
+        
+
+        marker_3f052f4f8b6ecb6ae8f7140d0ce22e4b.bindPopup(popup_71ccfd694a0ad9e7fa0b4d4855c06a40)
+        ;
+
+        
+    
+    
+            var marker_7f4a4fee7e6aa2ecc9f17c234d9b0e5f = L.marker(
+                [38.9629189, -104.7540993],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_aa93f21827de7b0c269038d7d7aeb8af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f4a4fee7e6aa2ecc9f17c234d9b0e5f.setIcon(icon_aa93f21827de7b0c269038d7d7aeb8af);
+        
+    
+        var popup_8014e5462f7abe4dd7ac010e530b83a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7370a99c8fbe4241e641374d540e9778 = $(`<div id="html_7370a99c8fbe4241e641374d540e9778" style="width: 100.0%; height: 100.0%;">John Stone<br>4017 Family Pl.<br><b>Northwest</b></div>`)[0];
+            popup_8014e5462f7abe4dd7ac010e530b83a6.setContent(html_7370a99c8fbe4241e641374d540e9778);
+        
+
+        marker_7f4a4fee7e6aa2ecc9f17c234d9b0e5f.bindPopup(popup_8014e5462f7abe4dd7ac010e530b83a6)
+        ;
+
+        
+    
+    
+            var marker_3c1c779b2e95bd97cb93fae300622b50 = L.marker(
+                [38.9598915, -104.7466249],
+                {}
+            ).addTo(feature_group_3d74104d6d7f6397c1ddad6f584751fb);
+        
+    
+            var icon_53df610baf223ab1dab27cefcc996ba3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c1c779b2e95bd97cb93fae300622b50.setIcon(icon_53df610baf223ab1dab27cefcc996ba3);
+        
+    
+        var popup_e5aec67f449fcead98df7879cf5221dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4a206c1e2c9b3690f3384e04b3840db = $(`<div id="html_f4a206c1e2c9b3690f3384e04b3840db" style="width: 100.0%; height: 100.0%;">Explorer<br>4260 Bardot Dr.<br><b>Northwest</b></div>`)[0];
+            popup_e5aec67f449fcead98df7879cf5221dc.setContent(html_f4a206c1e2c9b3690f3384e04b3840db);
+        
+
+        marker_3c1c779b2e95bd97cb93fae300622b50.bindPopup(popup_e5aec67f449fcead98df7879cf5221dc)
+        ;
+
+        
+    
+    
+            var feature_group_e461714bad6cf1b7d1f6f4aab7dce231 = L.featureGroup(
+                {}
+            ).addTo(map_3ff55cb70eaf1fb56717fe44cbee3727);
+        
+    
+            var marker_917536e23b80f9445aae4082548ce23c = L.marker(
+                [38.9528777, -104.8810083],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_157786e562280f20b0b4d4af24cd916c = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Marshall Sprague\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eMarshall Sprague\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_917536e23b80f9445aae4082548ce23c.setIcon(div_icon_157786e562280f20b0b4d4af24cd916c);
+        
+    
+            var marker_797e32f17bd10c7dd58edc088bd8f97d = L.marker(
+                [38.9079504, -104.8722448],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_e16653a9aeb582af19de0208304775fe = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Mountain Shadows\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eMountain Shadows\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_797e32f17bd10c7dd58edc088bd8f97d.setIcon(div_icon_e16653a9aeb582af19de0208304775fe);
+        
+    
+            var marker_5b541f68be6be4a4bdb5adecc2b291b0 = L.marker(
+                [38.8646279, -104.8718799],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_dd5cb1a16465506ee56192b071f563c7 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Westmoor\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eWestmoor\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_5b541f68be6be4a4bdb5adecc2b291b0.setIcon(div_icon_dd5cb1a16465506ee56192b071f563c7);
+        
+    
+            var marker_74deabc4fcbea00f2c272d35393ee913 = L.marker(
+                [38.9303627, -104.8713668],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_5f491259410b3fdba1abac62163ac141 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Wilson Ranch\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eWilson Ranch\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_74deabc4fcbea00f2c272d35393ee913.setIcon(div_icon_5f491259410b3fdba1abac62163ac141);
+        
+    
+            var marker_df57decdc2639ee021d919f0a77d5e2c = L.marker(
+                [38.9350622, -104.8705055],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_35d74ba28a9bb8507167e7e0044fb3ef = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Oak Valley\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eOak Valley\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_df57decdc2639ee021d919f0a77d5e2c.setIcon(div_icon_35d74ba28a9bb8507167e7e0044fb3ef);
+        
+    
+            var marker_ff18afc52e41483a522d194b7f4eb88f = L.marker(
+                [38.9474384, -104.8685322],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_f8a9763884587a6d216c63819e0eaa03 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Woodmen Valley\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eWoodmen Valley\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_ff18afc52e41483a522d194b7f4eb88f.setIcon(div_icon_f8a9763884587a6d216c63819e0eaa03);
+        
+    
+            var marker_b681fd6b3816b776c9d5d44bedee9fb3 = L.marker(
+                [38.8664011, -104.8605996],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_ae1b6a7863260325aa06d21f2e5f256c = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Pioneer\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003ePioneer\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_b681fd6b3816b776c9d5d44bedee9fb3.setIcon(div_icon_ae1b6a7863260325aa06d21f2e5f256c);
+        
+    
+            var marker_66c09967d6e00bb54878c738bcafa712 = L.marker(
+                [38.9119003, -104.8598733],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_8286e245582d55e7a3a991f78495602a = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Pinon Valley\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003ePinon Valley\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_66c09967d6e00bb54878c738bcafa712.setIcon(div_icon_8286e245582d55e7a3a991f78495602a);
+        
+    
+            var marker_ef058c914cd9cf38fc04e8f13ca995b6 = L.marker(
+                [38.9417671, -104.8511169],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_370b45b5ed9d5b4bf089459d33bbb1be = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Woodstone\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eWoodstone\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_ef058c914cd9cf38fc04e8f13ca995b6.setIcon(div_icon_370b45b5ed9d5b4bf089459d33bbb1be);
+        
+    
+            var marker_e4569c22b1b74bc80a675cfabdcf9886 = L.marker(
+                [38.9087287, -104.8439842],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_2dba156749a5d39c8ac9da8f459395e6 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Pine Cliff\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003ePine Cliff\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_e4569c22b1b74bc80a675cfabdcf9886.setIcon(div_icon_2dba156749a5d39c8ac9da8f459395e6);
+        
+    
+            var marker_42b1d4a691fde4b8b1532eded548252b = L.marker(
+                [38.9316252, -104.8436481],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_9b44090f1b7603dd7ccc8dde731b5159 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Foothills\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eFoothills\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_42b1d4a691fde4b8b1532eded548252b.setIcon(div_icon_9b44090f1b7603dd7ccc8dde731b5159);
+        
+    
+            var marker_cd1bad67c660087637c65062e57e4c02 = L.marker(
+                [38.8763402, -104.8413853],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_e04c9ef54eb4ba345ff523b6e93ee578 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Centennnial Medians\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eCentennnial Medians\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_cd1bad67c660087637c65062e57e4c02.setIcon(div_icon_e04c9ef54eb4ba345ff523b6e93ee578);
+        
+    
+            var marker_e25a010ec6e3a737900dedaa77c6d67d = L.marker(
+                [38.8933405, -104.8409344],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_dd95afe40b01176c6f7f7304cc39e6cd = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Jackson\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eJackson\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_e25a010ec6e3a737900dedaa77c6d67d.setIcon(div_icon_dd95afe40b01176c6f7f7304cc39e6cd);
+        
+    
+            var marker_e4004cbe6a9fe9ce347a8498a6c38ef6 = L.marker(
+                [38.869144, -104.8371246],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_9f4ea03077c2d355c1d3847d9947ca50 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Pike\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003ePike\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_e4004cbe6a9fe9ce347a8498a6c38ef6.setIcon(div_icon_9f4ea03077c2d355c1d3847d9947ca50);
+        
+    
+            var marker_ede486bf2742a9dafc44333cea826f97 = L.marker(
+                [38.9336495, -104.8312343],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_a462f66abbb4fc0b858b1d2107fa97eb = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Discovery\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eDiscovery\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_ede486bf2742a9dafc44333cea826f97.setIcon(div_icon_a462f66abbb4fc0b858b1d2107fa97eb);
+        
+    
+            var marker_ae6cd71ba15e1087b193ba798ab82e70 = L.marker(
+                [38.9284802, -104.8307222],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_db94ad945b1ceb1cebe404aa5fdaecfe = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Rockrimmon Medians\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eRockrimmon Medians\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_ae6cd71ba15e1087b193ba798ab82e70.setIcon(div_icon_db94ad945b1ceb1cebe404aa5fdaecfe);
+        
+    
+            var marker_93e3eeff1aabbddd7f8bb11f9ea92041 = L.marker(
+                [38.871784, -104.8305047],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_ebf62cf8974b05eaa8e3cbd16d10406d = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Roswell\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eRoswell\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_93e3eeff1aabbddd7f8bb11f9ea92041.setIcon(div_icon_ebf62cf8974b05eaa8e3cbd16d10406d);
+        
+    
+            var marker_f1a28765bbbe9566d1474907d20e70e5 = L.marker(
+                [38.8898416, -104.8272161],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_49879839dac8e3eceb5a3bee05c207bd = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Goose Complex\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eGoose Complex\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_f1a28765bbbe9566d1474907d20e70e5.setIcon(div_icon_49879839dac8e3eceb5a3bee05c207bd);
+        
+    
+            var marker_7c88a0a21d585c20fbea5ea45794c110 = L.marker(
+                [38.9206414, -104.8268842],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_2b810c98ccd060e036d6301b03608300 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Golden Hills\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eGolden Hills\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_7c88a0a21d585c20fbea5ea45794c110.setIcon(div_icon_2b810c98ccd060e036d6301b03608300);
+        
+    
+            var marker_dce92e4f64c287ea5f8658a937049baa = L.marker(
+                [38.9330043, -104.8151614],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_00370796d1edae27360e3bfec5762c3e = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Woodmen West Medians\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eWoodmen West Medians\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_dce92e4f64c287ea5f8658a937049baa.setIcon(div_icon_00370796d1edae27360e3bfec5762c3e);
+        
+    
+            var marker_085dfe316974763acfa35240729b2030 = L.marker(
+                [38.8782796, -104.8113885],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_42f20b7c77c29aa710e8de9348c7337f = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Flanagan\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eFlanagan\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_085dfe316974763acfa35240729b2030.setIcon(div_icon_42f20b7c77c29aa710e8de9348c7337f);
+        
+    
+            var marker_cbc7c5826af591f8927e2d30b7991eb8 = L.marker(
+                [39.025399, -104.8084482],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_48caf48e8462da99934454dddbbcc4f6 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Grey Hawk\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eGrey Hawk\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_cbc7c5826af591f8927e2d30b7991eb8.setIcon(div_icon_48caf48e8462da99934454dddbbcc4f6);
+        
+    
+            var marker_c5caacb6e9736c64952a7bd8023f7c60 = L.marker(
+                [38.8892752, -104.8057953],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_d9a536ae0d69bcf3f7d0807e914e231c = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Danville\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eDanville\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_c5caacb6e9736c64952a7bd8023f7c60.setIcon(div_icon_d9a536ae0d69bcf3f7d0807e914e231c);
+        
+    
+            var marker_a20621498b1280a6066f9e5160ee4118 = L.marker(
+                [39.0114057, -104.8053103],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_8dd69b60f795d139dca1fb0f8ad09962 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Mary Kyer\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eMary Kyer\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_a20621498b1280a6066f9e5160ee4118.setIcon(div_icon_8dd69b60f795d139dca1fb0f8ad09962);
+        
+    
+            var marker_511614e4121e62ad6026502daa9a3ebb = L.marker(
+                [38.8825543, -104.8017339],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_00218c5d982233b6f108691ea8832ba7 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Portal Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003ePortal Park\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_511614e4121e62ad6026502daa9a3ebb.setIcon(div_icon_00218c5d982233b6f108691ea8832ba7);
+        
+    
+            var marker_712e0417e54e4c3ae858dac7ffaecef1 = L.marker(
+                [38.9235514, -104.7964356],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_7bb7e60cd09ee253a109b4e174df3551 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Erindale\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eErindale\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_712e0417e54e4c3ae858dac7ffaecef1.setIcon(div_icon_7bb7e60cd09ee253a109b4e174df3551);
+        
+    
+            var marker_bef66af340206dbb14ec33e3f256937f = L.marker(
+                [38.9028633, -104.7899228],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_7128ea405ab43f414d28e8d1197c8d1f = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Frank Houck\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eFrank Houck\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_bef66af340206dbb14ec33e3f256937f.setIcon(div_icon_7128ea405ab43f414d28e8d1197c8d1f);
+        
+    
+            var marker_296cdd7f41aea8d44ff660e73f76c7d4 = L.marker(
+                [38.910328, -104.7885871],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_c83daad5e2a1cc3ca0365984f572d505 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"University Park Trail\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eUniversity Park Trail\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_296cdd7f41aea8d44ff660e73f76c7d4.setIcon(div_icon_c83daad5e2a1cc3ca0365984f572d505);
+        
+    
+            var marker_dc0d3d2860068971bce89abe562a4f1c = L.marker(
+                [38.9049972, -104.7864941],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_ac3fd7af92ac284fbc25f4f0dfe9a9a3 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Garden Ranch\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eGarden Ranch\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_dc0d3d2860068971bce89abe562a4f1c.setIcon(div_icon_ac3fd7af92ac284fbc25f4f0dfe9a9a3);
+        
+    
+            var marker_8b3ee5f4348cfb643bbaa18d252a6b3e = L.marker(
+                [38.9776196, -104.7836359],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_3d9b539120507220c184015598496298 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Kathleen Marriage\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eKathleen Marriage\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_8b3ee5f4348cfb643bbaa18d252a6b3e.setIcon(div_icon_3d9b539120507220c184015598496298);
+        
+    
+            var marker_27a935a8abf28c3ea9f07276e9dee8d6 = L.marker(
+                [38.9240073, -104.7834563],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_b43532a929f1940e47717393093d5f64 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Dublin\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eDublin\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_27a935a8abf28c3ea9f07276e9dee8d6.setIcon(div_icon_b43532a929f1940e47717393093d5f64);
+        
+    
+            var marker_880b20604d94bd9542ee1e8b3e8b47fe = L.marker(
+                [38.9128806, -104.7794421],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_9494b142a77876f2b568720d76a37c5e = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"George Fellows\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eGeorge Fellows\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_880b20604d94bd9542ee1e8b3e8b47fe.setIcon(div_icon_9494b142a77876f2b568720d76a37c5e);
+        
+    
+            var marker_d162ccba3a9f832b849b868e703753a8 = L.marker(
+                [38.9641493, -104.7779834],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_606b4a97eb1b1f3da31244fcdc181975 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Lulu Pollard\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eLulu Pollard\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_d162ccba3a9f832b849b868e703753a8.setIcon(div_icon_606b4a97eb1b1f3da31244fcdc181975);
+        
+    
+            var marker_02f35c4b69570bf1077b9fdeb8314df2 = L.marker(
+                [38.9063325, -104.7756582],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_6e85552f5348b5330a99ed27980091b4 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Tomah\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eTomah\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_02f35c4b69570bf1077b9fdeb8314df2.setIcon(div_icon_6e85552f5348b5330a99ed27980091b4);
+        
+    
+            var marker_e262e15576451e2c5dcc2c3ed40e345d = L.marker(
+                [38.9550472, -104.7723083],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_058db188198e9c0ecdeb8f067ba119e6 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Wedgewood\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eWedgewood\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_e262e15576451e2c5dcc2c3ed40e345d.setIcon(div_icon_058db188198e9c0ecdeb8f067ba119e6);
+        
+    
+            var marker_cf9d979c7f752501feba45386ad54d6b = L.marker(
+                [38.9658246, -104.7579476],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_45431d6ae7a5b101aca769c849a5a1f4 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"John Venezia Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eJohn Venezia Park\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_cf9d979c7f752501feba45386ad54d6b.setIcon(div_icon_45431d6ae7a5b101aca769c849a5a1f4);
+        
+    
+            var marker_f264c94d2932fd1bfece3ee29d595ed3 = L.marker(
+                [38.9629189, -104.7540993],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_9a3f68c42d35b978a4ef9667707f8208 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"John Stone\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eJohn Stone\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_f264c94d2932fd1bfece3ee29d595ed3.setIcon(div_icon_9a3f68c42d35b978a4ef9667707f8208);
+        
+    
+            var marker_05d3f8999222c6637569c649116a85f2 = L.marker(
+                [38.9598915, -104.7466249],
+                {}
+            ).addTo(feature_group_e461714bad6cf1b7d1f6f4aab7dce231);
+        
+    
+            var div_icon_8ffb3ced6436d4eb71c9a2c6dff7e814 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Explorer\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:blue;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eExplorer\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_05d3f8999222c6637569c649116a85f2.setIcon(div_icon_8ffb3ced6436d4eb71c9a2c6dff7e814);
+        
+    
+            var feature_group_e859f594920a84ed9a13f686b8832b33 = L.featureGroup(
+                {}
+            ).addTo(map_3ff55cb70eaf1fb56717fe44cbee3727);
+        
+    
+            var marker_c10bd0623ea4358652adeee86e9b59ba = L.marker(
+                [38.9519422, -104.7748837],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_6c85bdbef38803a16df62632f0140cd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c10bd0623ea4358652adeee86e9b59ba.setIcon(icon_6c85bdbef38803a16df62632f0140cd3);
+        
+    
+        var popup_c528c12468262dac02683d40a8dedb1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebd36a3ff2ff8650bf749df1fc4c0dae = $(`<div id="html_ebd36a3ff2ff8650bf749df1fc4c0dae" style="width: 100.0%; height: 100.0%;">Rampart Park<br>8270 Lexingon Dr.<br><b>Northeast</b></div>`)[0];
+            popup_c528c12468262dac02683d40a8dedb1d.setContent(html_ebd36a3ff2ff8650bf749df1fc4c0dae);
+        
+
+        marker_c10bd0623ea4358652adeee86e9b59ba.bindPopup(popup_c528c12468262dac02683d40a8dedb1d)
+        ;
+
+        
+    
+    
+            var marker_ad0ca71b27b3498ba7988df94469a257 = L.marker(
+                [38.9060612, -104.7728781],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_c3ac9c33053a106bea35966c1d92a5e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ad0ca71b27b3498ba7988df94469a257.setIcon(icon_c3ac9c33053a106bea35966c1d92a5e7);
+        
+    
+        var popup_6da812a3060870378c6cc1b58856a8fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3712b645df545270b253f05dcd576bc = $(`<div id="html_e3712b645df545270b253f05dcd576bc" style="width: 100.0%; height: 100.0%;">Fremont Park<br>5080 El Camino Dr.<br><b>Northeast</b></div>`)[0];
+            popup_6da812a3060870378c6cc1b58856a8fb.setContent(html_e3712b645df545270b253f05dcd576bc);
+        
+
+        marker_ad0ca71b27b3498ba7988df94469a257.bindPopup(popup_6da812a3060870378c6cc1b58856a8fb)
+        ;
+
+        
+    
+    
+            var marker_450d57498738ca0da312039c5b64c38c = L.marker(
+                [38.8945503, -104.7697071],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_4675f93d1fd98406ff35a0782f4a5d7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_450d57498738ca0da312039c5b64c38c.setIcon(icon_4675f93d1fd98406ff35a0782f4a5d7a);
+        
+    
+        var popup_b94f21df5ab348be35299d6aa50fc958 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c74b8354e358a9e1a1b2f7f95984fc0f = $(`<div id="html_c74b8354e358a9e1a1b2f7f95984fc0f" style="width: 100.0%; height: 100.0%;">Grant Park<br>2821 Shadowglen Dr.<br><b>Northeast</b></div>`)[0];
+            popup_b94f21df5ab348be35299d6aa50fc958.setContent(html_c74b8354e358a9e1a1b2f7f95984fc0f);
+        
+
+        marker_450d57498738ca0da312039c5b64c38c.bindPopup(popup_b94f21df5ab348be35299d6aa50fc958)
+        ;
+
+        
+    
+    
+            var marker_54483f2567a26682a49c6955a6f471ee = L.marker(
+                [38.9188295, -104.7693529],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_3c949d0ba77781b94a478c211b3f66c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_54483f2567a26682a49c6955a6f471ee.setIcon(icon_3c949d0ba77781b94a478c211b3f66c1);
+        
+    
+        var popup_99436f85246a2bfc03558440bb8dc06d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4dba4c2934d4b89745ade7149f563482 = $(`<div id="html_4dba4c2934d4b89745ade7149f563482" style="width: 100.0%; height: 100.0%;">Keystone Park<br>6050 Sapporo Dr.<br><b>Northeast</b></div>`)[0];
+            popup_99436f85246a2bfc03558440bb8dc06d.setContent(html_4dba4c2934d4b89745ade7149f563482);
+        
+
+        marker_54483f2567a26682a49c6955a6f471ee.bindPopup(popup_99436f85246a2bfc03558440bb8dc06d)
+        ;
+
+        
+    
+    
+            var marker_aecd0b081a1af319dc20a4f0461cec22 = L.marker(
+                [38.9479582, -104.7674083],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_e391c04f8c3f2b5f97b588aa5b46cdaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aecd0b081a1af319dc20a4f0461cec22.setIcon(icon_e391c04f8c3f2b5f97b588aa5b46cdaa);
+        
+    
+        var popup_200805394c12ffe874ae6e2689c0ce73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28ade9532239219db6b871dda8306025 = $(`<div id="html_28ade9532239219db6b871dda8306025" style="width: 100.0%; height: 100.0%;">Ford Frick Park<br>8025 North Union.<br><b>Northeast</b></div>`)[0];
+            popup_200805394c12ffe874ae6e2689c0ce73.setContent(html_28ade9532239219db6b871dda8306025);
+        
+
+        marker_aecd0b081a1af319dc20a4f0461cec22.bindPopup(popup_200805394c12ffe874ae6e2689c0ce73)
+        ;
+
+        
+    
+    
+            var marker_e079bc5e257dfd57d215719aa5aef0c0 = L.marker(
+                [38.9327577, -104.7591902],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_5867ce79882dfb72b091a9b31aa91e89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e079bc5e257dfd57d215719aa5aef0c0.setIcon(icon_5867ce79882dfb72b091a9b31aa91e89);
+        
+    
+        var popup_144d972e0794c74535f999f01094a4d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f153786d692e4e30e1ca31bafb593a8 = $(`<div id="html_4f153786d692e4e30e1ca31bafb593a8" style="width: 100.0%; height: 100.0%;">Woodland Hills Park<br>3617 Woodland Hills Dr.<br><b>Northeast</b></div>`)[0];
+            popup_144d972e0794c74535f999f01094a4d3.setContent(html_4f153786d692e4e30e1ca31bafb593a8);
+        
+
+        marker_e079bc5e257dfd57d215719aa5aef0c0.bindPopup(popup_144d972e0794c74535f999f01094a4d3)
+        ;
+
+        
+    
+    
+            var marker_0b48fc5b756a21cf161e0ecad4adaef7 = L.marker(
+                [38.9380431, -104.7578781],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_f620a5bd0f628281ebc11f100b40a46d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0b48fc5b756a21cf161e0ecad4adaef7.setIcon(icon_f620a5bd0f628281ebc11f100b40a46d);
+        
+    
+        var popup_74e6709359c2bf1d1c3d5e6ef642b544 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3270cdc9a6b931e4b82fbdb15d307eef = $(`<div id="html_3270cdc9a6b931e4b82fbdb15d307eef" style="width: 100.0%; height: 100.0%;">Union Medians<br>Vickers to Woodmen<br><b>Northeast</b></div>`)[0];
+            popup_74e6709359c2bf1d1c3d5e6ef642b544.setContent(html_3270cdc9a6b931e4b82fbdb15d307eef);
+        
+
+        marker_0b48fc5b756a21cf161e0ecad4adaef7.bindPopup(popup_74e6709359c2bf1d1c3d5e6ef642b544)
+        ;
+
+        
+    
+    
+            var marker_2f69949fc6d8b7e2b2aaf50dd7608f82 = L.marker(
+                [38.946288, -104.7567542],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_35738b3760749c99856f63f93db3ff67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2f69949fc6d8b7e2b2aaf50dd7608f82.setIcon(icon_35738b3760749c99856f63f93db3ff67);
+        
+    
+        var popup_38c175632af63ec58aa55ffbdb0c1348 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91083043eb3608bcd95922659b61e4d2 = $(`<div id="html_91083043eb3608bcd95922659b61e4d2" style="width: 100.0%; height: 100.0%;">Frontier Park<br>3725 Meadow Ridge Dr.<br><b>Northeast</b></div>`)[0];
+            popup_38c175632af63ec58aa55ffbdb0c1348.setContent(html_91083043eb3608bcd95922659b61e4d2);
+        
+
+        marker_2f69949fc6d8b7e2b2aaf50dd7608f82.bindPopup(popup_38c175632af63ec58aa55ffbdb0c1348)
+        ;
+
+        
+    
+    
+            var marker_21da8aa008efe474cbeb5ee91233fcb6 = L.marker(
+                [38.9277506, -104.7557401],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_3614fafcc74b055e925e8423683e6824 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_21da8aa008efe474cbeb5ee91233fcb6.setIcon(icon_3614fafcc74b055e925e8423683e6824);
+        
+    
+        var popup_e995a8c8620f01fe16605fdcaa59793f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24aa75ac902dc74ae4f18bf15a284f3a = $(`<div id="html_24aa75ac902dc74ae4f18bf15a284f3a" style="width: 100.0%; height: 100.0%;">Cottonwood Creek Park<br>7040 Rangewood Dr.<br><b>Northeast</b></div>`)[0];
+            popup_e995a8c8620f01fe16605fdcaa59793f.setContent(html_24aa75ac902dc74ae4f18bf15a284f3a);
+        
+
+        marker_21da8aa008efe474cbeb5ee91233fcb6.bindPopup(popup_e995a8c8620f01fe16605fdcaa59793f)
+        ;
+
+        
+    
+    
+            var marker_ea8392a685ea430cca56d3e9f7afadfe = L.marker(
+                [38.9272537, -104.7550038],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_28ac06732f41698a4027bc592e4a88b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ea8392a685ea430cca56d3e9f7afadfe.setIcon(icon_28ac06732f41698a4027bc592e4a88b5);
+        
+    
+        var popup_31a861b6a25d33bd35ceaaf42f1c584c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbcb01590a80a09a48f9f32e70e5cb1d = $(`<div id="html_fbcb01590a80a09a48f9f32e70e5cb1d" style="width: 100.0%; height: 100.0%;">Cottonwood Creek Rec. Center<br>3920 Dublin Blvd.<br><b>Northeast</b></div>`)[0];
+            popup_31a861b6a25d33bd35ceaaf42f1c584c.setContent(html_fbcb01590a80a09a48f9f32e70e5cb1d);
+        
+
+        marker_ea8392a685ea430cca56d3e9f7afadfe.bindPopup(popup_31a861b6a25d33bd35ceaaf42f1c584c)
+        ;
+
+        
+    
+    
+            var marker_e5e508d46203c265695d884d8b186d0a = L.marker(
+                [38.9040512, -104.7535943],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_3e1a23424d22db638a8676fcd7b7d028 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e5e508d46203c265695d884d8b186d0a.setIcon(icon_3e1a23424d22db638a8676fcd7b7d028);
+        
+    
+        var popup_7ff7184779431d09a23aeca9a8e0a5a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6939b09c6829a13b4a21e63ac8112244 = $(`<div id="html_6939b09c6829a13b4a21e63ac8112244" style="width: 100.0%; height: 100.0%;">Keller Park<br>4950 Meadowland Blvd.<br><b>Northeast</b></div>`)[0];
+            popup_7ff7184779431d09a23aeca9a8e0a5a1.setContent(html_6939b09c6829a13b4a21e63ac8112244);
+        
+
+        marker_e5e508d46203c265695d884d8b186d0a.bindPopup(popup_7ff7184779431d09a23aeca9a8e0a5a1)
+        ;
+
+        
+    
+    
+            var marker_31a3a3ef5e766cbb95cb5a4420fe0a92 = L.marker(
+                [38.8997987, -104.7531253],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_7d4da50ec45d430e570426a35ff572d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_31a3a3ef5e766cbb95cb5a4420fe0a92.setIcon(icon_7d4da50ec45d430e570426a35ff572d9);
+        
+    
+        var popup_a5f5ba7e002b45767815244aeb58f16b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65e1063df6f511003c8149307a4ae8c2 = $(`<div id="html_65e1063df6f511003c8149307a4ae8c2" style="width: 100.0%; height: 100.0%;">Flintridge Medians<br>Academy to Montebello<br><b>Northeast</b></div>`)[0];
+            popup_a5f5ba7e002b45767815244aeb58f16b.setContent(html_65e1063df6f511003c8149307a4ae8c2);
+        
+
+        marker_31a3a3ef5e766cbb95cb5a4420fe0a92.bindPopup(popup_a5f5ba7e002b45767815244aeb58f16b)
+        ;
+
+        
+    
+    
+            var marker_68fd127c839354558398965d97587bc1 = L.marker(
+                [38.8828363, -104.7525797],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_61d9ff9ed42e2ac84c9fd4bd3957e8a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_68fd127c839354558398965d97587bc1.setIcon(icon_61d9ff9ed42e2ac84c9fd4bd3957e8a1);
+        
+    
+        var popup_525286dceddacf1f0130d5b5d2e64d39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99147016a9bf546c344b603a1af4efd6 = $(`<div id="html_99147016a9bf546c344b603a1af4efd6" style="width: 100.0%; height: 100.0%;">Village Green Park<br>3590 Carefree Cir. N.<br><b>Northeast</b></div>`)[0];
+            popup_525286dceddacf1f0130d5b5d2e64d39.setContent(html_99147016a9bf546c344b603a1af4efd6);
+        
+
+        marker_68fd127c839354558398965d97587bc1.bindPopup(popup_525286dceddacf1f0130d5b5d2e64d39)
+        ;
+
+        
+    
+    
+            var marker_f257147645864d17cd520823eb74e206 = L.marker(
+                [38.8785168, -104.7469265],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_42e876c4c7c468fd1851f3c21aca8a4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f257147645864d17cd520823eb74e206.setIcon(icon_42e876c4c7c468fd1851f3c21aca8a4b);
+        
+    
+        var popup_63d79360861ae1976743dbf5601ffeba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbc2659d4c89f6856cb2d810ea0ee512 = $(`<div id="html_dbc2659d4c89f6856cb2d810ea0ee512" style="width: 100.0%; height: 100.0%;">Penrose Park<br>4295 Nonchalant Cir. S.<br><b>Northeast</b></div>`)[0];
+            popup_63d79360861ae1976743dbf5601ffeba.setContent(html_dbc2659d4c89f6856cb2d810ea0ee512);
+        
+
+        marker_f257147645864d17cd520823eb74e206.bindPopup(popup_63d79360861ae1976743dbf5601ffeba)
+        ;
+
+        
+    
+    
+            var marker_1e47d87da495cbd02e84ad61a842aed2 = L.marker(
+                [38.9513715, -104.7446196],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_0b4adf071c741e01af6884e04804371f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1e47d87da495cbd02e84ad61a842aed2.setIcon(icon_0b4adf071c741e01af6884e04804371f);
+        
+    
+        var popup_6176bf2c72034bfc1edbe4de0470654c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b6d715013ccd3b6cab5e292ea71fe3a = $(`<div id="html_2b6d715013ccd3b6cab5e292ea71fe3a" style="width: 100.0%; height: 100.0%;">Candleflower Park<br>7690 Contrails Dr.<br><b>Northeast</b></div>`)[0];
+            popup_6176bf2c72034bfc1edbe4de0470654c.setContent(html_2b6d715013ccd3b6cab5e292ea71fe3a);
+        
+
+        marker_1e47d87da495cbd02e84ad61a842aed2.bindPopup(popup_6176bf2c72034bfc1edbe4de0470654c)
+        ;
+
+        
+    
+    
+            var marker_faf87613af608bf4a98f7d3f12690e21 = L.marker(
+                [38.8868872, -104.7426764],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_9233eb7f683fa6b5cb7fb6f895822744 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_faf87613af608bf4a98f7d3f12690e21.setIcon(icon_9233eb7f683fa6b5cb7fb6f895822744);
+        
+    
+        var popup_7c2b4901d795c8a9d931ac1882e69f02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b376bd3374c104c5ba46bbe8fbf95024 = $(`<div id="html_b376bd3374c104c5ba46bbe8fbf95024" style="width: 100.0%; height: 100.0%;">Carver Park<br>4242 Carefree Cir. N.<br><b>Northeast</b></div>`)[0];
+            popup_7c2b4901d795c8a9d931ac1882e69f02.setContent(html_b376bd3374c104c5ba46bbe8fbf95024);
+        
+
+        marker_faf87613af608bf4a98f7d3f12690e21.bindPopup(popup_7c2b4901d795c8a9d931ac1882e69f02)
+        ;
+
+        
+    
+    
+            var marker_995aa8f586e10fe88c2c64c3ac3d11a8 = L.marker(
+                [38.9194166, -104.738604],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_11f6c5463333ac9638f1d241f7b89b11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_995aa8f586e10fe88c2c64c3ac3d11a8.setIcon(icon_11f6c5463333ac9638f1d241f7b89b11);
+        
+    
+        var popup_81a1bbca8d6cfd5553f292d381f1fc1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_496d1e0c3c1c927186f3fb6991acd94c = $(`<div id="html_496d1e0c3c1c927186f3fb6991acd94c" style="width: 100.0%; height: 100.0%;">Judge Lunt<br>4870 Seton Pl.<br><b>Northeast</b></div>`)[0];
+            popup_81a1bbca8d6cfd5553f292d381f1fc1d.setContent(html_496d1e0c3c1c927186f3fb6991acd94c);
+        
+
+        marker_995aa8f586e10fe88c2c64c3ac3d11a8.bindPopup(popup_81a1bbca8d6cfd5553f292d381f1fc1d)
+        ;
+
+        
+    
+    
+            var marker_b040a9e589679f07cff9df395b7c347c = L.marker(
+                [38.9503997, -104.7377825],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_be2c1337805f8085a486590e2416c67b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b040a9e589679f07cff9df395b7c347c.setIcon(icon_be2c1337805f8085a486590e2416c67b);
+        
+    
+        var popup_3eaab2a51059cbd64aee8c4f27f4cb62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bf1882ffdd97f5ea6ffd0f31519c148 = $(`<div id="html_5bf1882ffdd97f5ea6ffd0f31519c148" style="width: 100.0%; height: 100.0%;">Fairfax Park<br>8175 Chancellor Dr.<br><b>Northeast</b></div>`)[0];
+            popup_3eaab2a51059cbd64aee8c4f27f4cb62.setContent(html_5bf1882ffdd97f5ea6ffd0f31519c148);
+        
+
+        marker_b040a9e589679f07cff9df395b7c347c.bindPopup(popup_3eaab2a51059cbd64aee8c4f27f4cb62)
+        ;
+
+        
+    
+    
+            var marker_3e0234f739ee5f2e20a9f7258ec4441e = L.marker(
+                [38.9443241, -104.7359758],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_e41b33ea15827b7e2b02c0f2250e59f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3e0234f739ee5f2e20a9f7258ec4441e.setIcon(icon_e41b33ea15827b7e2b02c0f2250e59f7);
+        
+    
+        var popup_aae1d15d7dcaaedd50fbe5a07cf56a2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fb22f3a6f683cd86b0d520e1f5baba7 = $(`<div id="html_5fb22f3a6f683cd86b0d520e1f5baba7" style="width: 100.0%; height: 100.0%;">Buckskin Charlie Park<br>7665 Scarborough Dr.<br><b>Northeast</b></div>`)[0];
+            popup_aae1d15d7dcaaedd50fbe5a07cf56a2e.setContent(html_5fb22f3a6f683cd86b0d520e1f5baba7);
+        
+
+        marker_3e0234f739ee5f2e20a9f7258ec4441e.bindPopup(popup_aae1d15d7dcaaedd50fbe5a07cf56a2e)
+        ;
+
+        
+    
+    
+            var marker_bd27c34b1bcfea9f7bd03493eb258f06 = L.marker(
+                [38.8722701, -104.7338826],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_d5e14c57645d885909a9200ec5cc8a0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bd27c34b1bcfea9f7bd03493eb258f06.setIcon(icon_d5e14c57645d885909a9200ec5cc8a0b);
+        
+    
+        var popup_2b5e216dc652a4f5212a571616b7672d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ce646cb5917b754b46f4124e86a098d = $(`<div id="html_7ce646cb5917b754b46f4124e86a098d" style="width: 100.0%; height: 100.0%;">Villa Loma<br>5055 Escapardo Way<br><b>Northeast</b></div>`)[0];
+            popup_2b5e216dc652a4f5212a571616b7672d.setContent(html_7ce646cb5917b754b46f4124e86a098d);
+        
+
+        marker_bd27c34b1bcfea9f7bd03493eb258f06.bindPopup(popup_2b5e216dc652a4f5212a571616b7672d)
+        ;
+
+        
+    
+    
+            var marker_24ffe94140a97f85bdd3c693a33f3e33 = L.marker(
+                [38.8984563, -104.732781],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_9bf4b4167c05ab63f6c051b9f5d14ef8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_24ffe94140a97f85bdd3c693a33f3e33.setIcon(icon_9bf4b4167c05ab63f6c051b9f5d14ef8);
+        
+    
+        var popup_b49fb3cfec57100d1ff4faf037809469 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f297a4efe8f415a023c614fbb4a9b7d7 = $(`<div id="html_f297a4efe8f415a023c614fbb4a9b7d7" style="width: 100.0%; height: 100.0%;">Otero Park<br>4630 Iron Horse Trl.<br><b>Northeast</b></div>`)[0];
+            popup_b49fb3cfec57100d1ff4faf037809469.setContent(html_f297a4efe8f415a023c614fbb4a9b7d7);
+        
+
+        marker_24ffe94140a97f85bdd3c693a33f3e33.bindPopup(popup_b49fb3cfec57100d1ff4faf037809469)
+        ;
+
+        
+    
+    
+            var marker_2cc2a3bcb3c92614a0713147ac53d21d = L.marker(
+                [38.9083074, -104.7309716],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_be6e4ce8f446b5f247cea0d47761d0ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2cc2a3bcb3c92614a0713147ac53d21d.setIcon(icon_be6e4ce8f446b5f247cea0d47761d0ba);
+        
+    
+        var popup_517a9e62a87e68c1fb7438a25b1bff49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1931167ce49bbb82d4dfcb76eb503bd = $(`<div id="html_b1931167ce49bbb82d4dfcb76eb503bd" style="width: 100.0%; height: 100.0%;">Old Farm Maintenance Shop<br>4585 Old Farm Cir. W.<br><b>Northeast</b></div>`)[0];
+            popup_517a9e62a87e68c1fb7438a25b1bff49.setContent(html_b1931167ce49bbb82d4dfcb76eb503bd);
+        
+
+        marker_2cc2a3bcb3c92614a0713147ac53d21d.bindPopup(popup_517a9e62a87e68c1fb7438a25b1bff49)
+        ;
+
+        
+    
+    
+            var marker_104718959164549d578c9dd225287ff6 = L.marker(
+                [38.9083074, -104.7309716],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_9937ee129a668e55a8ca6c2c4ef75efb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_104718959164549d578c9dd225287ff6.setIcon(icon_9937ee129a668e55a8ca6c2c4ef75efb);
+        
+    
+        var popup_cb8c01beb9828897414d49be84c149b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d0e8492a9e1d6be821ebf0294fd6438 = $(`<div id="html_7d0e8492a9e1d6be821ebf0294fd6438" style="width: 100.0%; height: 100.0%;">Old Farm Park & Maintenance Shop<br>4585 Old Farm Cir. W.<br><b>Northeast</b></div>`)[0];
+            popup_cb8c01beb9828897414d49be84c149b2.setContent(html_7d0e8492a9e1d6be821ebf0294fd6438);
+        
+
+        marker_104718959164549d578c9dd225287ff6.bindPopup(popup_cb8c01beb9828897414d49be84c149b2)
+        ;
+
+        
+    
+    
+            var marker_e0498ac81ff50f479ca31734d6393aa2 = L.marker(
+                [38.9238027, -104.7306272],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_f229809bee7b1abfc376b6aca0cd65b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e0498ac81ff50f479ca31734d6393aa2.setIcon(icon_f229809bee7b1abfc376b6aca0cd65b9);
+        
+    
+        var popup_28ba9f63630b4968c967620883798d5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fec1eaca474dd75cf6d35c0b4f3ef11 = $(`<div id="html_0fec1eaca474dd75cf6d35c0b4f3ef11" style="width: 100.0%; height: 100.0%;">Fred McKown Park<br>5155 Balsam St.<br><b>Northeast</b></div>`)[0];
+            popup_28ba9f63630b4968c967620883798d5a.setContent(html_0fec1eaca474dd75cf6d35c0b4f3ef11);
+        
+
+        marker_e0498ac81ff50f479ca31734d6393aa2.bindPopup(popup_28ba9f63630b4968c967620883798d5a)
+        ;
+
+        
+    
+    
+            var marker_f4bb188f7d3b1442cc964c6222b35b55 = L.marker(
+                [38.9341859, -104.7304582],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_f47305e3dd8077afb73bad761f9f5635 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f4bb188f7d3b1442cc964c6222b35b55.setIcon(icon_f47305e3dd8077afb73bad761f9f5635);
+        
+    
+        var popup_22ed81687c156f4e3a34adbb1e2c5578 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85e871b68188a0e5e6a2e7fe8e83613c = $(`<div id="html_85e871b68188a0e5e6a2e7fe8e83613c" style="width: 100.0%; height: 100.0%;">Eugene McCleary Park<br>5214 Pioneer Mesa Dr.<br><b>Northeast</b></div>`)[0];
+            popup_22ed81687c156f4e3a34adbb1e2c5578.setContent(html_85e871b68188a0e5e6a2e7fe8e83613c);
+        
+
+        marker_f4bb188f7d3b1442cc964c6222b35b55.bindPopup(popup_22ed81687c156f4e3a34adbb1e2c5578)
+        ;
+
+        
+    
+    
+            var marker_d2ebc18652a72ab00c79542ddb614080 = L.marker(
+                [38.8768768, -104.7289429],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_ef0350f7b3119a438df240a7a7661183 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d2ebc18652a72ab00c79542ddb614080.setIcon(icon_ef0350f7b3119a438df240a7a7661183);
+        
+    
+        var popup_0d43ba858673bcc1ce58c9d5900fa68f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67d3eb9a3ce9ecdc9f261d2f3cfc9de1 = $(`<div id="html_67d3eb9a3ce9ecdc9f261d2f3cfc9de1" style="width: 100.0%; height: 100.0%;">Homestead<br>5300 Carefree Cir.<br><b>Northeast</b></div>`)[0];
+            popup_0d43ba858673bcc1ce58c9d5900fa68f.setContent(html_67d3eb9a3ce9ecdc9f261d2f3cfc9de1);
+        
+
+        marker_d2ebc18652a72ab00c79542ddb614080.bindPopup(popup_0d43ba858673bcc1ce58c9d5900fa68f)
+        ;
+
+        
+    
+    
+            var marker_ef7e9685f00f969427defa13e24b1440 = L.marker(
+                [38.8924439, -104.7278393],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_d765ceb4daeeda5df1a3e3fd4779a589 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ef7e9685f00f969427defa13e24b1440.setIcon(icon_d765ceb4daeeda5df1a3e3fd4779a589);
+        
+    
+        var popup_457288a675ae2933d9f7e0b2dabc6c72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90dba6d446d8121220f2ccc52daf9482 = $(`<div id="html_90dba6d446d8121220f2ccc52daf9482" style="width: 100.0%; height: 100.0%;">Rudy Park<br>5360 Cracker Barrel Cir.<br><b>Northeast</b></div>`)[0];
+            popup_457288a675ae2933d9f7e0b2dabc6c72.setContent(html_90dba6d446d8121220f2ccc52daf9482);
+        
+
+        marker_ef7e9685f00f969427defa13e24b1440.bindPopup(popup_457288a675ae2933d9f7e0b2dabc6c72)
+        ;
+
+        
+    
+    
+            var marker_3ef1e0c4718febc59bcfaefcdbf764b3 = L.marker(
+                [38.9108192, -104.7246481],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_08bfcd283e9f41c25e3c39b4319194e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3ef1e0c4718febc59bcfaefcdbf764b3.setIcon(icon_08bfcd283e9f41c25e3c39b4319194e4);
+        
+    
+        var popup_160cce6155c39512636424ac5de202f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_983f2891e34671116e0db30a7a8e3f54 = $(`<div id="html_983f2891e34671116e0db30a7a8e3f54" style="width: 100.0%; height: 100.0%;">Jack Templeton<br>5347 Rose Ridge Ln.<br><b>Northeast</b></div>`)[0];
+            popup_160cce6155c39512636424ac5de202f1.setContent(html_983f2891e34671116e0db30a7a8e3f54);
+        
+
+        marker_3ef1e0c4718febc59bcfaefcdbf764b3.bindPopup(popup_160cce6155c39512636424ac5de202f1)
+        ;
+
+        
+    
+    
+            var marker_db07b0c3deffd0f009adbc853131a1dd = L.marker(
+                [38.9474753, -104.7240216],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_3a7fab9b03c2c3c09f4956d2279bbcfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_db07b0c3deffd0f009adbc853131a1dd.setIcon(icon_3a7fab9b03c2c3c09f4956d2279bbcfb);
+        
+    
+        var popup_068fc088b91550bbd365c314e26ac47b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1e2ad4f42ce2bb79e0ccc8bd7966fb4 = $(`<div id="html_d1e2ad4f42ce2bb79e0ccc8bd7966fb4" style="width: 100.0%; height: 100.0%;">Frank Castello<br>7640 Potomac Dr.<br><b>Northeast</b></div>`)[0];
+            popup_068fc088b91550bbd365c314e26ac47b.setContent(html_d1e2ad4f42ce2bb79e0ccc8bd7966fb4);
+        
+
+        marker_db07b0c3deffd0f009adbc853131a1dd.bindPopup(popup_068fc088b91550bbd365c314e26ac47b)
+        ;
+
+        
+    
+    
+            var marker_36d93a32eab4cb75b02c7bade109db77 = L.marker(
+                [38.9554261, -104.7228979],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_06ea736819c99d8e77c8338e75509f28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_36d93a32eab4cb75b02c7bade109db77.setIcon(icon_06ea736819c99d8e77c8338e75509f28);
+        
+    
+        var popup_ad73d18ddce8e96527d25899c6f69656 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0f93bbdf1ad839d5ef7e6940495ad40 = $(`<div id="html_b0f93bbdf1ad839d5ef7e6940495ad40" style="width: 100.0%; height: 100.0%;">West Creek Park<br>8542 Winding Passage Dr.<br><b>Northeast</b></div>`)[0];
+            popup_ad73d18ddce8e96527d25899c6f69656.setContent(html_b0f93bbdf1ad839d5ef7e6940495ad40);
+        
+
+        marker_36d93a32eab4cb75b02c7bade109db77.bindPopup(popup_ad73d18ddce8e96527d25899c6f69656)
+        ;
+
+        
+    
+    
+            var marker_fa8394ac160aef8dc5ee86fb380328ec = L.marker(
+                [38.9205913, -104.7145437],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_9b574e08bb4e0c5c21772d58113ab927 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fa8394ac160aef8dc5ee86fb380328ec.setIcon(icon_9b574e08bb4e0c5c21772d58113ab927);
+        
+    
+        var popup_b72bae006c933b9332f613021c7722ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36b399fece056cf431af62db706cb551 = $(`<div id="html_36b399fece056cf431af62db706cb551" style="width: 100.0%; height: 100.0%;">Snowy River Park<br>6152 Snowy River Dr.<br><b>Northeast</b></div>`)[0];
+            popup_b72bae006c933b9332f613021c7722ea.setContent(html_36b399fece056cf431af62db706cb551);
+        
+
+        marker_fa8394ac160aef8dc5ee86fb380328ec.bindPopup(popup_b72bae006c933b9332f613021c7722ea)
+        ;
+
+        
+    
+    
+            var marker_b5f48fdb174c16a7db6c450df15cb0af = L.marker(
+                [38.9067192, -104.7143615],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_28ce9b2c3214ae7cb7e2a0810a257d3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b5f48fdb174c16a7db6c450df15cb0af.setIcon(icon_28ce9b2c3214ae7cb7e2a0810a257d3a);
+        
+    
+        var popup_9033652134540a7fe0b9596c4cb7a93c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a278b0cfb93e5a8beff7a96c43b0c563 = $(`<div id="html_a278b0cfb93e5a8beff7a96c43b0c563" style="width: 100.0%; height: 100.0%;">Pring Ranch Park<br>5264 Prairie Grass Ln.<br><b>Northeast</b></div>`)[0];
+            popup_9033652134540a7fe0b9596c4cb7a93c.setContent(html_a278b0cfb93e5a8beff7a96c43b0c563);
+        
+
+        marker_b5f48fdb174c16a7db6c450df15cb0af.bindPopup(popup_9033652134540a7fe0b9596c4cb7a93c)
+        ;
+
+        
+    
+    
+            var marker_a724795d7119fc764bd07af1e043e9c7 = L.marker(
+                [38.8958859, -104.7133219],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_b08bb5b9d854daea3f8b8a35df3e0803 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a724795d7119fc764bd07af1e043e9c7.setIcon(icon_b08bb5b9d854daea3f8b8a35df3e0803);
+        
+    
+        var popup_42288794f659a5025f6be6bc3c856b82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2724c827c45314e1edf1ef00bc5cffed = $(`<div id="html_2724c827c45314e1edf1ef00bc5cffed" style="width: 100.0%; height: 100.0%;">Ragain Field<br>6190 Barnes Rd.<br><b>Northeast</b></div>`)[0];
+            popup_42288794f659a5025f6be6bc3c856b82.setContent(html_2724c827c45314e1edf1ef00bc5cffed);
+        
+
+        marker_a724795d7119fc764bd07af1e043e9c7.bindPopup(popup_42288794f659a5025f6be6bc3c856b82)
+        ;
+
+        
+    
+    
+            var marker_bd18fb343b9d5698efa20179fe1604bd = L.marker(
+                [38.8820369, -104.7114543],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_9408c54bda3bb324d7a3d2fd169496b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bd18fb343b9d5698efa20179fe1604bd.setIcon(icon_9408c54bda3bb324d7a3d2fd169496b2);
+        
+    
+        var popup_c21f1e88eac154e1c644f7d945c6b6e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28bb511ac8e67d8b7acac93ab8535b32 = $(`<div id="html_28bb511ac8e67d8b7acac93ab8535b32" style="width: 100.0%; height: 100.0%;">Greenways Park<br>3631 Greenways Main Blvd.<br><b>Northeast</b></div>`)[0];
+            popup_c21f1e88eac154e1c644f7d945c6b6e6.setContent(html_28bb511ac8e67d8b7acac93ab8535b32);
+        
+
+        marker_bd18fb343b9d5698efa20179fe1604bd.bindPopup(popup_c21f1e88eac154e1c644f7d945c6b6e6)
+        ;
+
+        
+    
+    
+            var marker_367493901d27d12c011379ec585a7dc8 = L.marker(
+                [38.9134837, -104.7097159],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_db4576b7f39918fdc68a542f33160ad6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_367493901d27d12c011379ec585a7dc8.setIcon(icon_db4576b7f39918fdc68a542f33160ad6);
+        
+    
+        var popup_17c5c9065daa9f96be1308f6387d1eab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d12960f8d491c4610d8f48677cc9ff73 = $(`<div id="html_d12960f8d491c4610d8f48677cc9ff73" style="width: 100.0%; height: 100.0%;">Horace Shelby<br>6442 Summit Peak Dr.<br><b>Northeast</b></div>`)[0];
+            popup_17c5c9065daa9f96be1308f6387d1eab.setContent(html_d12960f8d491c4610d8f48677cc9ff73);
+        
+
+        marker_367493901d27d12c011379ec585a7dc8.bindPopup(popup_17c5c9065daa9f96be1308f6387d1eab)
+        ;
+
+        
+    
+    
+            var marker_92800d0cc74dd38201a397aa8ec0aa46 = L.marker(
+                [38.8779899, -104.7017867],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_67cdfbacfb1d2bcc7601dce086c89535 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_92800d0cc74dd38201a397aa8ec0aa46.setIcon(icon_67cdfbacfb1d2bcc7601dce086c89535);
+        
+    
+        var popup_e17ca6838d5e87f7b67f5ce92dc638d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e65b2eb6fe9e23f1642a3af2650d108f = $(`<div id="html_e65b2eb6fe9e23f1642a3af2650d108f" style="width: 100.0%; height: 100.0%;">Springs Ranch Park<br>2990 Pony Tracks Dr.<br><b>Northeast</b></div>`)[0];
+            popup_e17ca6838d5e87f7b67f5ce92dc638d4.setContent(html_e65b2eb6fe9e23f1642a3af2650d108f);
+        
+
+        marker_92800d0cc74dd38201a397aa8ec0aa46.bindPopup(popup_e17ca6838d5e87f7b67f5ce92dc638d4)
+        ;
+
+        
+    
+    
+            var marker_cc3627fc3980f4ff9f6e1005208995c9 = L.marker(
+                [38.907723, -104.7001278],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_6866b22d3dede1c6d54458bc132b7437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cc3627fc3980f4ff9f6e1005208995c9.setIcon(icon_6866b22d3dede1c6d54458bc132b7437);
+        
+    
+        var popup_3260779e65673d02109b58743af98e0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08c6373c796befbb78c1d0a24b672983 = $(`<div id="html_08c6373c796befbb78c1d0a24b672983" style="width: 100.0%; height: 100.0%;">Stetson Hills Park<br>4870 Jedediah Smith Rd.<br><b>Northeast</b></div>`)[0];
+            popup_3260779e65673d02109b58743af98e0e.setContent(html_08c6373c796befbb78c1d0a24b672983);
+        
+
+        marker_cc3627fc3980f4ff9f6e1005208995c9.bindPopup(popup_3260779e65673d02109b58743af98e0e)
+        ;
+
+        
+    
+    
+            var marker_300f9957f010de30fb26145664198cd0 = L.marker(
+                [38.9202089, -104.6999408],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_d306dd47fc69d0b4e96179fe230530c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_300f9957f010de30fb26145664198cd0.setIcon(icon_d306dd47fc69d0b4e96179fe230530c8);
+        
+    
+        var popup_75412c42b43adc91061c6f4f1578706c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01831272490e4d12302aaa51f9fd9317 = $(`<div id="html_01831272490e4d12302aaa51f9fd9317" style="width: 100.0%; height: 100.0%;">Jared Jensen Park<br>6724 Windom Peak Blvd<br><b>Northeast</b></div>`)[0];
+            popup_75412c42b43adc91061c6f4f1578706c.setContent(html_01831272490e4d12302aaa51f9fd9317);
+        
+
+        marker_300f9957f010de30fb26145664198cd0.bindPopup(popup_75412c42b43adc91061c6f4f1578706c)
+        ;
+
+        
+    
+    
+            var marker_adfdf0db70bd43a6cf5f6b79e22d352f = L.marker(
+                [38.8987956, -104.6990751],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_4d3d65d6b509d81e4fb299b273fca8b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_adfdf0db70bd43a6cf5f6b79e22d352f.setIcon(icon_4d3d65d6b509d81e4fb299b273fca8b1);
+        
+    
+        var popup_411bba17f2cc2aad5ec3dacb4c7c9651 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d411b7eb107e5764bec408d1bcdd15f9 = $(`<div id="html_d411b7eb107e5764bec408d1bcdd15f9" style="width: 100.0%; height: 100.0%;">Sandstone Park<br>4650 Pring Ranch Rd.<br><b>Northeast</b></div>`)[0];
+            popup_411bba17f2cc2aad5ec3dacb4c7c9651.setContent(html_d411b7eb107e5764bec408d1bcdd15f9);
+        
+
+        marker_adfdf0db70bd43a6cf5f6b79e22d352f.bindPopup(popup_411bba17f2cc2aad5ec3dacb4c7c9651)
+        ;
+
+        
+    
+    
+            var marker_315189b08dbe171998f9a946ae236df3 = L.marker(
+                [38.8775767, -104.6973579],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_e689004bb1bd70dcb8709f319ad05014 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_315189b08dbe171998f9a946ae236df3.setIcon(icon_e689004bb1bd70dcb8709f319ad05014);
+        
+    
+        var popup_8b97cf0427a2b9a7276d1dea10acc43a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a231b5277bbe4b52edfd9fbdcac1907 = $(`<div id="html_1a231b5277bbe4b52edfd9fbdcac1907" style="width: 100.0%; height: 100.0%;">Remington Park<br>2750 Pony Tracks Dr.<br><b>Northeast</b></div>`)[0];
+            popup_8b97cf0427a2b9a7276d1dea10acc43a.setContent(html_1a231b5277bbe4b52edfd9fbdcac1907);
+        
+
+        marker_315189b08dbe171998f9a946ae236df3.bindPopup(popup_8b97cf0427a2b9a7276d1dea10acc43a)
+        ;
+
+        
+    
+    
+            var marker_ad155b1532f76c48e3dfb81c6f09e691 = L.marker(
+                [38.8936853, -104.6964573],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_edcb5857698f692d7125264076d6e13f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ad155b1532f76c48e3dfb81c6f09e691.setIcon(icon_edcb5857698f692d7125264076d6e13f);
+        
+    
+        var popup_104c2f668eeda73e1b7726f95e374f2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5adb74923a01505f20c99b8601558fb7 = $(`<div id="html_5adb74923a01505f20c99b8601558fb7" style="width: 100.0%; height: 100.0%;">High Meadows Park<br>4216 Ashby Field Dr.<br><b>Northeast</b></div>`)[0];
+            popup_104c2f668eeda73e1b7726f95e374f2a.setContent(html_5adb74923a01505f20c99b8601558fb7);
+        
+
+        marker_ad155b1532f76c48e3dfb81c6f09e691.bindPopup(popup_104c2f668eeda73e1b7726f95e374f2a)
+        ;
+
+        
+    
+    
+            var marker_98b3554a5670a47e85a2379ff948446f = L.marker(
+                [38.918181, -104.694718],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_ebb3c6baea8586053b39f1f8ae49276b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_98b3554a5670a47e85a2379ff948446f.setIcon(icon_ebb3c6baea8586053b39f1f8ae49276b);
+        
+    
+        var popup_e8bd4ff4e1f84454637943be2734d702 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_907f1057eb91f84a20f7d20e86078316 = $(`<div id="html_907f1057eb91f84a20f7d20e86078316" style="width: 100.0%; height: 100.0%;">Ken Jordon<br>5914 High Noon Ave.<br><b>Northeast</b></div>`)[0];
+            popup_e8bd4ff4e1f84454637943be2734d702.setContent(html_907f1057eb91f84a20f7d20e86078316);
+        
+
+        marker_98b3554a5670a47e85a2379ff948446f.bindPopup(popup_e8bd4ff4e1f84454637943be2734d702)
+        ;
+
+        
+    
+    
+            var marker_6ece5986ded1cbd682793f318b89c6a8 = L.marker(
+                [38.9050422, -104.6910438],
+                {}
+            ).addTo(feature_group_e859f594920a84ed9a13f686b8832b33);
+        
+    
+            var icon_7abe31bcb00b5eed7832a64ee942dba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6ece5986ded1cbd682793f318b89c6a8.setIcon(icon_7abe31bcb00b5eed7832a64ee942dba7);
+        
+    
+        var popup_5f1b79fd2b6b4bd46615998ae30282d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07fd566a12ccf2d4486fe522818cfd52 = $(`<div id="html_07fd566a12ccf2d4486fe522818cfd52" style="width: 100.0%; height: 100.0%;">Laura Gilpin<br>7415 Kettle Drum St.<br><b>Northeast</b></div>`)[0];
+            popup_5f1b79fd2b6b4bd46615998ae30282d2.setContent(html_07fd566a12ccf2d4486fe522818cfd52);
+        
+
+        marker_6ece5986ded1cbd682793f318b89c6a8.bindPopup(popup_5f1b79fd2b6b4bd46615998ae30282d2)
+        ;
+
+        
+    
+    
+            var feature_group_4a50320fe2a6c73ea058a5cb2e00eb13 = L.featureGroup(
+                {}
+            ).addTo(map_3ff55cb70eaf1fb56717fe44cbee3727);
+        
+    
+            var marker_9cfe0cba932203885bad802ad7d84ab6 = L.marker(
+                [38.9519422, -104.7748837],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_78e220439b3bdc4f438c51f13001e114 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Rampart Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eRampart Park\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_9cfe0cba932203885bad802ad7d84ab6.setIcon(div_icon_78e220439b3bdc4f438c51f13001e114);
+        
+    
+            var marker_744510036ca79ef4413b0b21614ac908 = L.marker(
+                [38.9060612, -104.7728781],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_4be739956f91eb99578d5977b38de31b = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Fremont Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eFremont Park\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_744510036ca79ef4413b0b21614ac908.setIcon(div_icon_4be739956f91eb99578d5977b38de31b);
+        
+    
+            var marker_72e75fc98b3ade1dc5b2cc259acec4ba = L.marker(
+                [38.8945503, -104.7697071],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_2b9698d73eb0ab9a85e7b5b7d0a88e53 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Grant Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eGrant Park\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_72e75fc98b3ade1dc5b2cc259acec4ba.setIcon(div_icon_2b9698d73eb0ab9a85e7b5b7d0a88e53);
+        
+    
+            var marker_c51446ba6189c4b02380a06a98108f6c = L.marker(
+                [38.9188295, -104.7693529],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_357e4de6a8e9a758e66afbb6c808be8f = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Keystone Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eKeystone Park\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_c51446ba6189c4b02380a06a98108f6c.setIcon(div_icon_357e4de6a8e9a758e66afbb6c808be8f);
+        
+    
+            var marker_8ef87c31e802d2d459dafe3052c54fd3 = L.marker(
+                [38.9479582, -104.7674083],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_10b22780e3fff6a73f7efa4b21df5c53 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Ford Frick Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eFord Frick Park\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_8ef87c31e802d2d459dafe3052c54fd3.setIcon(div_icon_10b22780e3fff6a73f7efa4b21df5c53);
+        
+    
+            var marker_bd8dc93d4adf19598b44695d5b42275e = L.marker(
+                [38.9327577, -104.7591902],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_0c05ca153cb329174c41b53244d169ce = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Woodland Hills Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eWoodland Hills Park\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_bd8dc93d4adf19598b44695d5b42275e.setIcon(div_icon_0c05ca153cb329174c41b53244d169ce);
+        
+    
+            var marker_5afa32dad841151ec33425a015657a0c = L.marker(
+                [38.9380431, -104.7578781],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_cd3f38792b04fd5d39f7cae27d682015 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Union Medians\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eUnion Medians\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_5afa32dad841151ec33425a015657a0c.setIcon(div_icon_cd3f38792b04fd5d39f7cae27d682015);
+        
+    
+            var marker_879ab2c6153bec4e8e943e1ed4a22aa4 = L.marker(
+                [38.946288, -104.7567542],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_4a7087fc705c3fe4a40843a202627014 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Frontier Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eFrontier Park\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_879ab2c6153bec4e8e943e1ed4a22aa4.setIcon(div_icon_4a7087fc705c3fe4a40843a202627014);
+        
+    
+            var marker_0442516cf445ff5abcc06347e257d270 = L.marker(
+                [38.9277506, -104.7557401],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_88dbc5158ae49122e59029686b2b240e = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Cottonwood Creek Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eCottonwood Creek Park\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_0442516cf445ff5abcc06347e257d270.setIcon(div_icon_88dbc5158ae49122e59029686b2b240e);
+        
+    
+            var marker_4ca925330557030b8715ed181ba434ef = L.marker(
+                [38.9272537, -104.7550038],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_bcd660c5cef4b9b462fe000080b3cb8b = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Cottonwood Creek Rec. Center\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eCottonwood Creek Rec. Center\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_4ca925330557030b8715ed181ba434ef.setIcon(div_icon_bcd660c5cef4b9b462fe000080b3cb8b);
+        
+    
+            var marker_e8b47497607de61776c6a293e6baac4d = L.marker(
+                [38.9040512, -104.7535943],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_5a4f26ce0c31e4a0c0d8547ad1598622 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Keller Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eKeller Park\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_e8b47497607de61776c6a293e6baac4d.setIcon(div_icon_5a4f26ce0c31e4a0c0d8547ad1598622);
+        
+    
+            var marker_0842397a8759b9b61aeaaed769f4c9b8 = L.marker(
+                [38.8997987, -104.7531253],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_677eab8b3e93da4409d1da8356848233 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Flintridge Medians\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eFlintridge Medians\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_0842397a8759b9b61aeaaed769f4c9b8.setIcon(div_icon_677eab8b3e93da4409d1da8356848233);
+        
+    
+            var marker_c7a0b9a6526ae0cf4e076e9929a55da8 = L.marker(
+                [38.8828363, -104.7525797],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_04092fdfbdef977193ecc2f5bbfecacf = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Village Green Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eVillage Green Park\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_c7a0b9a6526ae0cf4e076e9929a55da8.setIcon(div_icon_04092fdfbdef977193ecc2f5bbfecacf);
+        
+    
+            var marker_ed7de78d2597f7995b15b30e25f66984 = L.marker(
+                [38.8785168, -104.7469265],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_f814144c740df559c11a900a0f26f4e8 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Penrose Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003ePenrose Park\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_ed7de78d2597f7995b15b30e25f66984.setIcon(div_icon_f814144c740df559c11a900a0f26f4e8);
+        
+    
+            var marker_9dbf2df06590d21555ba67bcdc6781d7 = L.marker(
+                [38.9513715, -104.7446196],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_872c710433868cbbb1a11ccd4bc807bc = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Candleflower Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eCandleflower Park\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_9dbf2df06590d21555ba67bcdc6781d7.setIcon(div_icon_872c710433868cbbb1a11ccd4bc807bc);
+        
+    
+            var marker_cbeaf999889e81d1a5f842e8af6064a7 = L.marker(
+                [38.8868872, -104.7426764],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_53129ee4086dd45a036c4d8fd81d523a = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Carver Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eCarver Park\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_cbeaf999889e81d1a5f842e8af6064a7.setIcon(div_icon_53129ee4086dd45a036c4d8fd81d523a);
+        
+    
+            var marker_a39d1e2e4675545131fde579488f6bb1 = L.marker(
+                [38.9194166, -104.738604],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_39ae3e8c9bf9f6d7ee594b4bdeebb527 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Judge Lunt\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eJudge Lunt\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_a39d1e2e4675545131fde579488f6bb1.setIcon(div_icon_39ae3e8c9bf9f6d7ee594b4bdeebb527);
+        
+    
+            var marker_03c2a1444b2a84e851a438613e165e52 = L.marker(
+                [38.9503997, -104.7377825],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_1c9af45b7b4b6977b8ef1e629fbeca62 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Fairfax Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eFairfax Park\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_03c2a1444b2a84e851a438613e165e52.setIcon(div_icon_1c9af45b7b4b6977b8ef1e629fbeca62);
+        
+    
+            var marker_2b17787329fecb7056fa84c59675d229 = L.marker(
+                [38.9443241, -104.7359758],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_2bfc2c6ffb6ed296304c800e592eb1a7 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Buckskin Charlie Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eBuckskin Charlie Park\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_2b17787329fecb7056fa84c59675d229.setIcon(div_icon_2bfc2c6ffb6ed296304c800e592eb1a7);
+        
+    
+            var marker_a4f3fba0f7e028c58b8e2626ec1c3267 = L.marker(
+                [38.8722701, -104.7338826],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_d4054ce04013f9f7165733150d6ac2d5 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Villa Loma\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eVilla Loma\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_a4f3fba0f7e028c58b8e2626ec1c3267.setIcon(div_icon_d4054ce04013f9f7165733150d6ac2d5);
+        
+    
+            var marker_076bcecb7cd8c6160e1a9e68d8ddc589 = L.marker(
+                [38.8984563, -104.732781],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_3988f732d3d8b81ab87216ae4c536ced = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Otero Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eOtero Park\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_076bcecb7cd8c6160e1a9e68d8ddc589.setIcon(div_icon_3988f732d3d8b81ab87216ae4c536ced);
+        
+    
+            var marker_374083b40c8c22aabb69f5d984d6557b = L.marker(
+                [38.9083074, -104.7309716],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_0064a30b02c126ab6b000e12667a3264 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Old Farm Maintenance Shop\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eOld Farm Maintenance Shop\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_374083b40c8c22aabb69f5d984d6557b.setIcon(div_icon_0064a30b02c126ab6b000e12667a3264);
+        
+    
+            var marker_f642d967191a360546fec23617e5a7da = L.marker(
+                [38.9083074, -104.7309716],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_f44a45e24f081c0c68074a7479c2eb99 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Old Farm Park \u0026 Maintenance Shop\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eOld Farm Park \u0026 Maintenance Shop\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_f642d967191a360546fec23617e5a7da.setIcon(div_icon_f44a45e24f081c0c68074a7479c2eb99);
+        
+    
+            var marker_b9630cb922caa4a17d814f13744965ae = L.marker(
+                [38.9238027, -104.7306272],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_8c0fb588dd417da2d6e3ae513a9f49e1 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Fred McKown Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eFred McKown Park\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_b9630cb922caa4a17d814f13744965ae.setIcon(div_icon_8c0fb588dd417da2d6e3ae513a9f49e1);
+        
+    
+            var marker_237b607b21893835b601b76176760f85 = L.marker(
+                [38.9341859, -104.7304582],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_82525f12f99923f4f60c54e369e31ede = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Eugene McCleary Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eEugene McCleary Park\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_237b607b21893835b601b76176760f85.setIcon(div_icon_82525f12f99923f4f60c54e369e31ede);
+        
+    
+            var marker_4312a160b26b3007a28eb3c512b6eb41 = L.marker(
+                [38.8768768, -104.7289429],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_d5db58d62efce167105dd5bf52a03b9e = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Homestead\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eHomestead\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_4312a160b26b3007a28eb3c512b6eb41.setIcon(div_icon_d5db58d62efce167105dd5bf52a03b9e);
+        
+    
+            var marker_bb15db243fa19bd4401e1d5c9f57bb39 = L.marker(
+                [38.8924439, -104.7278393],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_4f0a2e69f8606a484e025b4a12838c16 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Rudy Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eRudy Park\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_bb15db243fa19bd4401e1d5c9f57bb39.setIcon(div_icon_4f0a2e69f8606a484e025b4a12838c16);
+        
+    
+            var marker_2cac6acb7151c8c47258bf7092a2c3bc = L.marker(
+                [38.9108192, -104.7246481],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_08ad9bec80175bc86c39355680ba4871 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Jack Templeton\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eJack Templeton\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_2cac6acb7151c8c47258bf7092a2c3bc.setIcon(div_icon_08ad9bec80175bc86c39355680ba4871);
+        
+    
+            var marker_9e652b0e1aba7b71ec146d9dc921076d = L.marker(
+                [38.9474753, -104.7240216],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_09290379ec75a06933ed5d261b5f3694 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Frank Castello\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eFrank Castello\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_9e652b0e1aba7b71ec146d9dc921076d.setIcon(div_icon_09290379ec75a06933ed5d261b5f3694);
+        
+    
+            var marker_0a9164e9ab9ff7994d4a5e3067b7b617 = L.marker(
+                [38.9554261, -104.7228979],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_06ebfb79f1346fb77b780939d503c33f = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"West Creek Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eWest Creek Park\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_0a9164e9ab9ff7994d4a5e3067b7b617.setIcon(div_icon_06ebfb79f1346fb77b780939d503c33f);
+        
+    
+            var marker_2a80444bf33a38207c196b3a4176c1cd = L.marker(
+                [38.9205913, -104.7145437],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_4bd7bd694053c3e04a7c561a1f58faf5 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Snowy River Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eSnowy River Park\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_2a80444bf33a38207c196b3a4176c1cd.setIcon(div_icon_4bd7bd694053c3e04a7c561a1f58faf5);
+        
+    
+            var marker_0ea66cac0d65d75a4f1469e217a5911b = L.marker(
+                [38.9067192, -104.7143615],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_34e6beef0bd193864a7ba724a9ac1095 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Pring Ranch Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003ePring Ranch Park\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_0ea66cac0d65d75a4f1469e217a5911b.setIcon(div_icon_34e6beef0bd193864a7ba724a9ac1095);
+        
+    
+            var marker_6060765faf887665156a57b1cbb4305f = L.marker(
+                [38.8958859, -104.7133219],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_b17c6d0d781e50b6a9748ecf409ab5f2 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Ragain Field\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eRagain Field\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_6060765faf887665156a57b1cbb4305f.setIcon(div_icon_b17c6d0d781e50b6a9748ecf409ab5f2);
+        
+    
+            var marker_f9837e632d0f8da838466315a0953d0c = L.marker(
+                [38.8820369, -104.7114543],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_13c4aadbe384c03d712eb32684f0035e = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Greenways Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eGreenways Park\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_f9837e632d0f8da838466315a0953d0c.setIcon(div_icon_13c4aadbe384c03d712eb32684f0035e);
+        
+    
+            var marker_f31011c101c2a0c8945e6d79c699c1f3 = L.marker(
+                [38.9134837, -104.7097159],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_2dc9693cfc192afc67b16311544b1f57 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Horace Shelby\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eHorace Shelby\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_f31011c101c2a0c8945e6d79c699c1f3.setIcon(div_icon_2dc9693cfc192afc67b16311544b1f57);
+        
+    
+            var marker_acb914367cd1225e6629e9eaa72def4a = L.marker(
+                [38.8779899, -104.7017867],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_fa47827076e39368c1e4ba1a93c63f01 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Springs Ranch Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eSprings Ranch Park\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_acb914367cd1225e6629e9eaa72def4a.setIcon(div_icon_fa47827076e39368c1e4ba1a93c63f01);
+        
+    
+            var marker_35a9431fca0f46d7174093e22b56098e = L.marker(
+                [38.907723, -104.7001278],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_fe0bb8bd93b896865c3c8ba4d8660ec9 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Stetson Hills Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eStetson Hills Park\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_35a9431fca0f46d7174093e22b56098e.setIcon(div_icon_fe0bb8bd93b896865c3c8ba4d8660ec9);
+        
+    
+            var marker_d8012a4ca1334b25901d4f99762eaf5e = L.marker(
+                [38.9202089, -104.6999408],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_6eef405712135c8335860ee3421af0b2 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Jared Jensen Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eJared Jensen Park\u003c/div\u003e\n    ", "iconAnchor": [6, -10], "iconSize": [150, 14]});
+            marker_d8012a4ca1334b25901d4f99762eaf5e.setIcon(div_icon_6eef405712135c8335860ee3421af0b2);
+        
+    
+            var marker_2b7c1f0ef0d43acfc05962d0dee016e0 = L.marker(
+                [38.8987956, -104.6990751],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_18df6bd883975f0dde16bef4fccac4c4 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Sandstone Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eSandstone Park\u003c/div\u003e\n    ", "iconAnchor": [-6, 10], "iconSize": [150, 14]});
+            marker_2b7c1f0ef0d43acfc05962d0dee016e0.setIcon(div_icon_18df6bd883975f0dde16bef4fccac4c4);
+        
+    
+            var marker_c2d852e7c2faf5b6b4d7216140bda9c3 = L.marker(
+                [38.8775767, -104.6973579],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_d61b106d5e25b78237534b939478fc5a = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Remington Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eRemington Park\u003c/div\u003e\n    ", "iconAnchor": [0, -8], "iconSize": [150, 14]});
+            marker_c2d852e7c2faf5b6b4d7216140bda9c3.setIcon(div_icon_d61b106d5e25b78237534b939478fc5a);
+        
+    
+            var marker_c487f4b2a6f0fa76ace69cdf9b0637df = L.marker(
+                [38.8936853, -104.6964573],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_db4f23774d43cd22f8db94af6ac1269d = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"High Meadows Park\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eHigh Meadows Park\u003c/div\u003e\n    ", "iconAnchor": [8, -2], "iconSize": [150, 14]});
+            marker_c487f4b2a6f0fa76ace69cdf9b0637df.setIcon(div_icon_db4f23774d43cd22f8db94af6ac1269d);
+        
+    
+            var marker_0aba3c7b6d9d0bb4b0408bd65ed9cc9a = L.marker(
+                [38.918181, -104.694718],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_46497e5f0426a4f65d9273d848f463fb = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Ken Jordon\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eKen Jordon\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_0aba3c7b6d9d0bb4b0408bd65ed9cc9a.setIcon(div_icon_46497e5f0426a4f65d9273d848f463fb);
+        
+    
+            var marker_bd1b6bbf504840f20a0a7d843236d2fb = L.marker(
+                [38.9050422, -104.6910438],
+                {}
+            ).addTo(feature_group_4a50320fe2a6c73ea058a5cb2e00eb13);
+        
+    
+            var div_icon_1c338205fc8ff6aa9bd477ae17b2e1a1 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Laura Gilpin\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:green;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eLaura Gilpin\u003c/div\u003e\n    ", "iconAnchor": [-8, -2], "iconSize": [150, 14]});
+            marker_bd1b6bbf504840f20a0a7d843236d2fb.setIcon(div_icon_1c338205fc8ff6aa9bd477ae17b2e1a1);
+        
+    
+            var feature_group_cb5aa3309edf839c7a8db963b9e44b3f = L.featureGroup(
+                {}
+            ).addTo(map_3ff55cb70eaf1fb56717fe44cbee3727);
+        
+    
+            var marker_7fdbea422fe8275d2f69c57004f4a152 = L.marker(
+                [38.8607667, -104.8355963],
+                {}
+            ).addTo(feature_group_cb5aa3309edf839c7a8db963b9e44b3f);
+        
+    
+            var icon_a0d2c210cb3e7aca32eadcccbd065685 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7fdbea422fe8275d2f69c57004f4a152.setIcon(icon_a0d2c210cb3e7aca32eadcccbd065685);
+        
+    
+        var popup_46fbd05d696d5951431209ae69b1d4c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_655a1b6435bb6b4149e1f79b9e128ca0 = $(`<div id="html_655a1b6435bb6b4149e1f79b9e128ca0" style="width: 100.0%; height: 100.0%;">Mesa Springs Greenway<br>690 Centennial Blvd<br><b>Mesa Springs Greenway</b></div>`)[0];
+            popup_46fbd05d696d5951431209ae69b1d4c4.setContent(html_655a1b6435bb6b4149e1f79b9e128ca0);
+        
+
+        marker_7fdbea422fe8275d2f69c57004f4a152.bindPopup(popup_46fbd05d696d5951431209ae69b1d4c4)
+        ;
+
+        
+    
+    
+            var feature_group_ae8566318f751c89a93bbab812ba8586 = L.featureGroup(
+                {}
+            ).addTo(map_3ff55cb70eaf1fb56717fe44cbee3727);
+        
+    
+            var marker_f7201f8665caa49404d96b0b4d886c36 = L.marker(
+                [38.8607667, -104.8355963],
+                {}
+            ).addTo(feature_group_ae8566318f751c89a93bbab812ba8586);
+        
+    
+            var div_icon_0bcd2870180c39a9ff5fe162e8885202 = L.divIcon({"className": "empty", "html": "\n      \u003cdiv title=\"Mesa Springs Greenway\" style=\"\n          font-size:11px; \n          font-weight:600; \n          color:orange;\n          background-color:rgba(255,255,255,0.9);\n          padding:1px 3px;\n          border-radius:3px;\n          white-space:nowrap;\n          max-width: 110px;\n          overflow:hidden;\n          text-overflow:ellipsis;\n          box-shadow: 0 0 2px rgba(0,0,0,0.25);\n      \"\u003eMesa Springs Greenway\u003c/div\u003e\n    ", "iconAnchor": [0, 10], "iconSize": [150, 14]});
+            marker_f7201f8665caa49404d96b0b4d886c36.setIcon(div_icon_0bcd2870180c39a9ff5fe162e8885202);
+        
+    
+            var layer_control_9c36abedaddd8574059abcd7cdbfb07f = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f1351cc4657605846205bb8aa5c8159f,
+                },
+                overlays :  {
+                    "Northwest (pins)" : feature_group_3d74104d6d7f6397c1ddad6f584751fb,
+                    "Northwest (labels)" : feature_group_e461714bad6cf1b7d1f6f4aab7dce231,
+                    "Northeast (pins)" : feature_group_e859f594920a84ed9a13f686b8832b33,
+                    "Northeast (labels)" : feature_group_4a50320fe2a6c73ea058a5cb2e00eb13,
+                    "Mesa Springs Greenway (pins)" : feature_group_cb5aa3309edf839c7a8db963b9e44b3f,
+                    "Mesa Springs Greenway (labels)" : feature_group_ae8566318f751c89a93bbab812ba8586,
+                },
+            };
+            L.control.layers(
+                layer_control_9c36abedaddd8574059abcd7cdbfb07f.base_layers,
+                layer_control_9c36abedaddd8574059abcd7cdbfb07f.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_3ff55cb70eaf1fb56717fe44cbee3727);
+        
+</script>
+</html>
